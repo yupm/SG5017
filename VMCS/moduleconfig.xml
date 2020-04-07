@@ -4,11 +4,10 @@
     <input use="false"/>
     <output clear="false" create="false" recover="false" use="false"/>
     <mode type="overwrite"/>
-    <module exclude="" id="com.ps.consul.ui.transform.sparxsea.module" include="/variant" name="Create variant of project: VMCS.eap" tname="Enterprise Architect Module">
-      <parameter name="file" type="">VMCS.eap</parameter>
-      <parameter name="dir" type="">.</parameter>
-      <parameter name="srcfile" type="ps:path"/>
-      <parameter name="srcdir" type="ps:directory"/>
+    <module exclude="" id="com.ps.consul.eclipse.ui.transform.makefile.module" include="/variant" name="Makefile Generator" tname="makefile">
+      <parameter name="out" type="ps:path"/>
+      <parameter name="makesystem" type="ps:string">gmake</parameter>
+      <parameter name="prefix" type="ps:string"/>
     </module>
   </moduleconfig>
 </moduleconfigs>
