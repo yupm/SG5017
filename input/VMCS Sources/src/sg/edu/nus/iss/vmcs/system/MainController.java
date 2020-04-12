@@ -9,6 +9,8 @@ package sg.edu.nus.iss.vmcs.system;
 
 import java.io.IOException;
 
+import sg.edu.nus.iss.vmcs.customer.NoPayTransactionController;
+import sg.edu.nus.iss.vmcs.customer.PaymentType;
 import sg.edu.nus.iss.vmcs.customer.TransactionController;
 import sg.edu.nus.iss.vmcs.machinery.MachineryController;
 import sg.edu.nus.iss.vmcs.maintenance.MaintenanceController;
@@ -65,6 +67,8 @@ public class MainController {
 				new CashPropertyLoader(Environment.getCashPropFile());
 			DrinkPropertyLoader drinksLoader =
 				new DrinkPropertyLoader(Environment.getDrinkPropFile());
+			
+			
 			cashLoader.initialize();
 			drinksLoader.initialize();
 			storeCtrl = new StoreController(cashLoader, drinksLoader);
@@ -73,7 +77,15 @@ public class MainController {
 			machineryCtrl = new MachineryController(this);
 			machineryCtrl.initialize();
 			maintenanceCtrl = new MaintenanceController(this);
-			txCtrl=new TransactionController(this);
+			
+			PaymentConfiguration configuration = new PaymentConfiguration();
+			PaymentType currentPaymentMode = configuration.getPaymentType();
+			if(currentPaymentMode== PaymentType.None) {
+				txCtrl = new NoPayTransactionController(this);
+			}
+			else {
+				txCtrl=new TransactionController(this);
+			}
 		} catch (IOException e) {
 			throw new VMCSException(
 				"MainController.initialize",

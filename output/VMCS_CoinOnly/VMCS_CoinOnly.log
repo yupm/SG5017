@@ -1,0 +1,29 @@
+*** Transformation "Default" of "VMCS_CoinOnly" started at Apr 12 15:55:23
+
+Transformation Module States:
+-----------------------------
+
+Initialize Module "Action List Generator" [standard transformation]
+	Status : OK
+Initialize Module "Action List Runner" [PVSCL Transformation Module]
+	Status : OK
+Initialize Module "Action List Runner" [actionlist]
+	Status : OK
+Run Module "Action List Generator" [standard transformation]
+	Status : OK
+Run Module "Action List Runner" [PVSCL Transformation Module]
+	Status : OK
+Run Module "Action List Runner" [actionlist]
+	Status : OK
+Cleanup Module "Action List Generator" [standard transformation]
+	Status : OK
+Cleanup Module "Action List Runner" [PVSCL Transformation Module]
+	Status : OK
+Cleanup Module "Action List Runner" [actionlist]
+	Status : OK
+
+*** Transformation "Default" of "VMCS_CoinOnly" finished at Apr 12 15:55:24
+
+Transformation Module Logs:
+---------------------------
+

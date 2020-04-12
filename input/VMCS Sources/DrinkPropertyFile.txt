@@ -1,18 +1,18 @@
 #
-#Wed Apr 08 00:32:19 SGT 2020
+#Sun Apr 12 16:31:38 SGT 2020
 Name6=Soya Bean
 Name5=Coca-Cola
-Name4=Soya Bean
+Name4=Soya Bean Cold
 Name3=Sarsi
 Name2=Fanta
-Name1=Coca-Cola
+Name1=Coca-Cola Light
 NumOfItems=6
-Quantity6=10
-Quantity5=10
-Quantity4=10
-Quantity3=10
-Quantity2=10
-Quantity1=9
+Quantity6=98
+Quantity5=8
+Quantity4=97
+Quantity3=99
+Quantity2=98
+Quantity1=95
 Price6=90
 Price5=100
 Price4=90

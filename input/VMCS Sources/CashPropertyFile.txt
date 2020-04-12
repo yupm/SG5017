@@ -1,5 +1,5 @@
 #
-#Wed Apr 08 00:32:19 SGT 2020
+#Sun Apr 12 16:31:38 SGT 2020
 Name5=$1
 Name4=50C
 Name3=20C
@@ -11,10 +11,10 @@ NumOfItems=5
 Value3=20
 Value2=10
 Value1=5
-Quantity5=0
-Quantity4=2
-Quantity3=5
-Quantity2=11
+Quantity5=7
+Quantity4=1
+Quantity3=1
+Quantity2=0
 Quantity1=0
 Weight5=42.2
 Weight4=35.0

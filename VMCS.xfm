@@ -22,10 +22,6 @@
     <cm:element cm:id="it7CBIxVwkJ7s-PA7" cm:name="VMCSFeatures" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
       <cm:relations cm:id="ikMQT2QwaF1HFQMpH" cm:class="ps:children">
         <cm:relation cm:id="iB0rHgidH570haeRs" cm:type="ps:mandatory" cm:range="n">
-          <cm:target cm:id="i2OT4ncZBDSgMgbLI">./i-rTIcEkDUOkgNxGZ</cm:target>
-          <cm:target cm:id="imSoF35pJ3YBLRDXF">./ibkyShmviBD4HX6YV</cm:target>
-          <cm:target cm:id="iceZJpyWRBMdA7VBE">./iapcRpyHI682iv1Z0</cm:target>
-          <cm:target cm:id="i0BnqFJAAW8ombP1n">./ibWOBhMwQM5PzhHoL</cm:target>
           <cm:target cm:id="iQOyqG3ADAiFJ6nuV">./iG4u1cJguk6-Nb0k3</cm:target>
           <cm:target cm:id="iK5sfoAIFN4uaxYZk">./i5h2-OdUsKV2_6cqm</cm:target>
         </cm:relation>
@@ -42,405 +38,10 @@
           <cm:constant cm:id="icyeUyRtLWEbcwvF7" cm:type="ps:datetime">2020-02-17T18:25:28.302Z</cm:constant>
         </cm:property>
         <cm:property cm:id="iHx0oRuphMB5YJhrJ" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="ijJAoX68L14_UH4Va" cm:type="ps:string">dingjian</cm:constant>
+          <cm:constant cm:id="ijJAoX68L14_UH4Va" cm:type="ps:string">xuya</cm:constant>
         </cm:property>
         <cm:property cm:id="icrEhwGTLPIYiAUR8" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="i8d8MWXM9exqiEMYK" cm:type="ps:datetime">2020-04-04T13:45:18.269Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="i-rTIcEkDUOkgNxGZ" cm:name="Market" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
-      <cm:relations cm:id="i9XnjWRcOoHUZIulJ" cm:class="ps:parents">
-        <cm:relation cm:id="iEIDIPHm0yJ8hdtsV" cm:type="ps:parent">
-          <cm:target cm:id="ih_aAJ17Fzjg9aFY5">./it7CBIxVwkJ7s-PA7</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:relations cm:id="ikkZI1fY-Aik3lEFc" cm:class="ps:children">
-        <cm:relation cm:id="iNXTC2lvV5TWo_KyI" cm:type="ps:alternative" cm:range="1">
-          <cm:target cm:id="i7TXlvMOD1AOZwTuH">./i2as9t13tJJlozrFW</cm:target>
-          <cm:target cm:id="i5r7zxn36KyCxhFRq">./inhOZPqTOYATBoVJA</cm:target>
-          <cm:target cm:id="iQpDVvxPkHLze_SL-">./iRr-FnNDS05GWdrEs</cm:target>
-          <cm:target cm:id="iHOvJuGY5sYQkG7q_">./iW8v794IHawbLYkJO</cm:target>
-          <cm:target cm:id="i4tBYBfKpvdlqzBwU">./ifry2QWt9sayxZgJH</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="ivqDpvfyx9-HV_Mpd" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="idWPg34wdGNLWxgSz" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i1CD-k3SDe2efkIMz" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="ibt50PpS701BttEwm" cm:type="ps:datetime">2020-02-20T23:26:14.943Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ikk1lW2_27yRHuVZ9" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iT9adcD-DMdN6uxzS" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="itIgHhJOftemzwvu_" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="isGrdY-fkUaAf5pN2" cm:type="ps:datetime">2020-02-20T23:27:53.568Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="i2as9t13tJJlozrFW" cm:name="Singapore" cm:type="ps:feature" cm:class="ps:feature">
-      <cm:relations cm:id="ib4qFYg3mTOQfa76S" cm:class="ps:parents">
-        <cm:relation cm:id="i5sy7FnifPpTMJPi5" cm:type="ps:parent">
-          <cm:target cm:id="iaD3WKd6kOHSXYuTE">./i-rTIcEkDUOkgNxGZ</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:relations cm:id="iCeBzvcqznnz_by7a" cm:class="ps:dependencies">
-        <cm:relation cm:id="iFXJjkZFi0g84pGP7" cm:type="ps:requires">
-          <cm:target cm:id="icTufnDWuM8YHIVY4">iyYl3e3ATE1xYYDmV/ihch5Ddw_TjvvHCo7</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="irynqtCA8qyl0N2w2" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="iqmXp9nodrstjmc2d" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iRSblROmQ2JDbbQQ3" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="iAg0aXYJR-GAaUp3F" cm:type="ps:datetime">2020-02-20T23:26:34.380Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iGTvgo90RZHDlxBfd" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="i4NLuu260i9Q6Uvxl" cm:type="ps:string">dingjian</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iMw2Bsv0Y25WH-fcv" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iu7PhkFuNkvc2eJqr" cm:type="ps:datetime">2020-04-04T05:38:39.524Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="inhOZPqTOYATBoVJA" cm:name="China" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
-      <cm:relations cm:id="iEbyMEdyN6rrz54-h" cm:class="ps:parents">
-        <cm:relation cm:id="idX_gd-JONMJVaVyZ" cm:type="ps:parent">
-          <cm:target cm:id="i8WxDVz-PadzdwLDO">./i-rTIcEkDUOkgNxGZ</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:relations cm:id="i96UpUAFT6p0sooVw" cm:class="ps:dependencies">
-        <cm:relation cm:id="iONzUAkwFb6mqthRo" cm:type="ps:requires">
-          <cm:target cm:id="iFSLR0cZOBa3JdoOW">iyYl3e3ATE1xYYDmV/ifuZjwXVCSph_c6Nd</cm:target>
-        </cm:relation>
-        <cm:relation cm:id="iJI0Y0yAkDaiV_Zyl" cm:type="ps:conflicts">
-          <cm:target cm:id="ilgvuxoFZKDmTELvP">iyYl3e3ATE1xYYDmV/iHOB2zTU4Y8Q3CdoR</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="imrkiUJTtSZJ_MDLv" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="iw2VRIy6VI2LhRxeF" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="isqi1UIpUhxifpxDz" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="il4iXgwrUo0xKAVhT" cm:type="ps:datetime">2020-02-20T23:26:42.052Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iDH_ryiQaYaceq4WB" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="imB2AMbVWbfipRerm" cm:type="ps:string">dingjian</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ib9021OR0FiP4J3l6" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iEKlLspK-NmVpcTa-" cm:type="ps:datetime">2020-04-04T05:50:14.879Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="iRr-FnNDS05GWdrEs" cm:name="USA" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
-      <cm:relations cm:id="iTP0c6inxRkEQZOwa" cm:class="ps:parents">
-        <cm:relation cm:id="iUL7oGYtvz-M4WYu6" cm:type="ps:parent">
-          <cm:target cm:id="i8SSYY5hQfjHdE1NZ">./i-rTIcEkDUOkgNxGZ</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:relations cm:id="iG_9E5NHhs7PEuHDH" cm:class="ps:dependencies">
-        <cm:relation cm:id="iSbDfgmtRRv-NMTvy" cm:type="ps:requires">
-          <cm:target cm:id="iUkut3fljwIX2Enfr">iyYl3e3ATE1xYYDmV/ihch5Ddw_TjvvHCo7</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="i6Ok_HMtkl6NZS2lZ" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="iKfpX8cb3l_zZrlaF" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ifAR_4dTChbfE0c3g" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="iSz_CDxoxLtltIx3k" cm:type="ps:datetime">2020-02-20T23:26:52.052Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iqoxuE89o07WHXov-" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="ip49BbWlnZZa3EYMU" cm:type="ps:string">dingjian</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i4IONbeysktuSfO4M" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="i6kB2bZUnErd-dZW0" cm:type="ps:datetime">2020-04-04T05:39:19.383Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="ibkyShmviBD4HX6YV" cm:name="Edition" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
-      <cm:relations cm:id="iZLhrjIIMVUz8IaaQ" cm:class="ps:parents">
-        <cm:relation cm:id="iYBL94V7Hno3anO6A" cm:type="ps:parent">
-          <cm:target cm:id="iIGs6v5xYYRSQhG8s">./it7CBIxVwkJ7s-PA7</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:relations cm:id="igismsmYIDAphd7GS" cm:class="ps:children">
-        <cm:relation cm:id="ir68q82k-fRWVVUx4" cm:type="ps:alternative" cm:range="1">
-          <cm:target cm:id="ixg6OnFsY7LrBd2OQ">./ir9uquo48GiNvqrpk</cm:target>
-          <cm:target cm:id="iw5Wcub4R_46Laq-J">./ixwgq9ODuqIGILHJQ</cm:target>
-          <cm:target cm:id="iPQAa3nhT-nk4eJGD">./iMzHipApgIbyahSNS</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="icVAnhR60BxEIWan6" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="icrLXfs0kskCDnvYv" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ii1M3PSteV3ApY-Wu" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="iDYseBv0vt9zFsMNl" cm:type="ps:datetime">2020-02-20T23:27:17.912Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="is5vGTaHCo3XnCkd6" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="i6eZGrklTcMwTYQPx" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iwjjbiFyEH3htuK1r" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iEOG6QgaGe6ReMeNS" cm:type="ps:datetime">2020-02-20T23:28:40.318Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="ir9uquo48GiNvqrpk" cm:name="Standard" cm:type="ps:feature" cm:class="ps:feature">
-      <cm:relations cm:id="i1_d3Xyc7eF_sPrAK" cm:class="ps:parents">
-        <cm:relation cm:id="ib35Taecvbzdeg1X4" cm:type="ps:parent">
-          <cm:target cm:id="id7y7y44YQhUJfFB8">./ibkyShmviBD4HX6YV</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="iMJn9WvwdWH5LgQnu" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="icYQ0SiDACPZuCj8T" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="irWVCcHojQuppctTy" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="inlOASIdzvmoLCBhR" cm:type="ps:datetime">2020-02-20T23:27:33.146Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ione3Xq1q-5HNklLo" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="ilun5nyx0jbLkT-pJ" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iLJPPnnLLeKq4pLnv" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="ivsABbbhzzcdLwIY8" cm:type="ps:datetime">2020-02-20T23:27:33.146Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="iW8v794IHawbLYkJO" cm:name="Japan" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
-      <cm:relations cm:id="i6uHB7Z282IDOsHfA" cm:class="ps:parents">
-        <cm:relation cm:id="ipSyma_ofrSONwJsx" cm:type="ps:parent">
-          <cm:target cm:id="iuKIYtxxk9EFI-azr">./i-rTIcEkDUOkgNxGZ</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:relations cm:id="iXogWoLK9KSickDyB" cm:class="ps:dependencies">
-        <cm:relation cm:id="iKkeDy6sXZ2PvHTih" cm:type="ps:requires">
-          <cm:target cm:id="iz3gj6jAOjUeuuegA">iyYl3e3ATE1xYYDmV/iHOB2zTU4Y8Q3CdoR</cm:target>
-        </cm:relation>
-        <cm:relation cm:id="iQF3HiQBbrKnV-_3z" cm:type="ps:conflicts">
-          <cm:target cm:id="iFSOLoCa9gVNNX0IR">iyYl3e3ATE1xYYDmV/ifuZjwXVCSph_c6Nd</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="iWtgwfbmKgG2Vh8H2" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="icBI1YBywDGHuXV9n" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iqWjmdoT6Kio1V_ol" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="iFSJe0PhDkuQ0mtwz" cm:type="ps:datetime">2020-02-20T23:27:44.662Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iE7cgoYuA-xE4-NaG" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iMSQ7Ha2ZVlAxTQ1m" cm:type="ps:string">dingjian</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iu61ox08gyVaK0GLb" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iLrgWgL68Anoj7G_S" cm:type="ps:datetime">2020-04-04T06:10:59.428Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="ifry2QWt9sayxZgJH" cm:name="India" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
-      <cm:relations cm:id="iLCeC6q8-zfvOvl6L" cm:class="ps:parents">
-        <cm:relation cm:id="i1y0xSXwh5zmLc7hY" cm:type="ps:parent">
-          <cm:target cm:id="iZ5V45RxmWzpk8N-6">./i-rTIcEkDUOkgNxGZ</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:relations cm:id="iJUEcvg7-XxF_sPZb" cm:class="ps:dependencies">
-        <cm:relation cm:id="ik4E2Gx8PyrPN4Mxf" cm:type="ps:requires">
-          <cm:target cm:id="ioKROKeBv5y_Dgo6O">iyYl3e3ATE1xYYDmV/ihch5Ddw_TjvvHCo7</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="iLRpif2desMgpVnfV" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="iBS7BvpKcL-VlQzHr" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iU7PN5jjyufYOk79A" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="inKffNLsibz6beiox" cm:type="ps:datetime">2020-02-20T23:27:53.568Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i8_2iekJD0O3hFU8s" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iZ_dpdZXKPPUYMBRl" cm:type="ps:string">dingjian</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iG50GoberHRs5pgP1" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="i0gRCcNkCfl-e9KEk" cm:type="ps:datetime">2020-04-04T05:40:11.199Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="ixwgq9ODuqIGILHJQ" cm:name="Advanced" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
-      <cm:relations cm:id="iBpJEL4HyQ2rOAIhx" cm:class="ps:parents">
-        <cm:relation cm:id="iEYx_Jbtob0WNCtL5" cm:type="ps:parent">
-          <cm:target cm:id="iFXhPnqe5SMBQO1ly">./ibkyShmviBD4HX6YV</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="iSU_gILZeNBbtq5TL" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="iUN9fhs6VLbhZLjpl" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ijncqKao0di4Qv5Ug" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="ixYFlPCaLYAGw47al" cm:type="ps:datetime">2020-02-20T23:28:30.599Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iuBxJuUHElfiB8CVa" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="i80wSDH9iXVBZFUt3" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iNNKAXd_aRZSAGlta" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iECbmtp9fj-adVTed" cm:type="ps:datetime">2020-02-20T23:28:30.599Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="iMzHipApgIbyahSNS" cm:name="Specialized" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
-      <cm:relations cm:id="iM4bQ1ATI31M_oTAS" cm:class="ps:parents">
-        <cm:relation cm:id="i6O8k1Z5VOFonDDYy" cm:type="ps:parent">
-          <cm:target cm:id="iuOSQ_LuO3jUnk4mc">./ibkyShmviBD4HX6YV</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="i9gM0s_VqtEty2uD8" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="iGOZ5RA8zPr7mDoMd" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i-8QQ-bNgwFI1ORuX" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="iJasOPikEW84xBwxX" cm:type="ps:datetime">2020-02-20T23:28:40.318Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iOVt7suhoO2NRfoml" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iOHycSF6_QO-Nlfz1" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i-QbVvbfvHnTz7Roy" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="inXIiDwtRj4Bb4YNo" cm:type="ps:datetime">2020-02-20T23:28:40.318Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="iapcRpyHI682iv1Z0" cm:name="Dispenser" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
-      <cm:relations cm:id="iAm6gIAX1wBnFt65x" cm:class="ps:parents">
-        <cm:relation cm:id="iOZ_nTJ9bVjuKoJl9" cm:type="ps:parent">
-          <cm:target cm:id="i1yiJtc4J80vox-i3">./it7CBIxVwkJ7s-PA7</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:relations cm:id="iYH-Ef8LPhmCizMx7" cm:class="ps:children">
-        <cm:relation cm:id="iGa8WdcYfn0J66D9Q" cm:type="ps:alternative">
-          <cm:target cm:id="iUlLH2EzbPmzYOa6S">./iErgbcCnorT5INAsF</cm:target>
-          <cm:target cm:id="irKrmQCbiNeQtUhnN">./ihY5-qLhu8zgTDS0b</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="iI_ESZ_D85I0jaqWS" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="i7Y8FMLqjJz8CNtGn" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i7g5kf26zb6yvfrJh" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="ip8N3IidzTrycK9z8" cm:type="ps:datetime">2020-02-20T23:32:27.396Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iyw80OnM1Lq6dydwI" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="i2IzxQpe5cnzla2Ee" cm:type="ps:string">dingjian</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iVZRsa3U_fcKJzvqK" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iog-vtzm5COSKOSO2" cm:type="ps:datetime">2020-03-31T12:34:01.976Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="iErgbcCnorT5INAsF" cm:name="SmallPackets" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
-      <cm:relations cm:id="i9Jt24H8Wsrh8fSeX" cm:class="ps:parents">
-        <cm:relation cm:id="iEUwDsNON5gw-NklO" cm:type="ps:parent">
-          <cm:target cm:id="iUXeKqtXRMu1CmTsP">./iapcRpyHI682iv1Z0</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="ic988aBpDwKtVEiKP" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="ijJUOl1QDzlTmxwGJ" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iz0NHn3GKeG9JFtop" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="i3t3oms1fSoHop89h" cm:type="ps:datetime">2020-02-20T23:33:50.709Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ip8c9phTutZ4pjvUz" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iHuyE7B6VYG0kY9nN" cm:type="ps:string">dingjian</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ioaJD4UBpadXHxW8n" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="i9lT5JLCxOuJycE7d" cm:type="ps:datetime">2020-03-29T15:29:16.542Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="ihY5-qLhu8zgTDS0b" cm:name="Drinks" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
-      <cm:relations cm:id="iFV2HhOxHbAQIBfFO" cm:class="ps:parents">
-        <cm:relation cm:id="iw2UOSqeVGUu5APSC" cm:type="ps:parent">
-          <cm:target cm:id="iyozVDQt7zLIVq7ZP">./iapcRpyHI682iv1Z0</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="iUBKXUq7TQ1c_VrTS" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="inrzLTalEFAqxZ6vC" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i4yW35g3d_fHMHmhr" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="iw2OPpuk2kuhEa97r" cm:type="ps:datetime">2020-02-20T23:34:03.740Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ihqv97vzH1tfprjSy" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iDLAZu-1SwZ4SDdbu" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iJxD-L6UuVvBu74LX" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iugN6sJr7qveuh1XP" cm:type="ps:datetime">2020-02-20T23:34:03.740Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="ibWOBhMwQM5PzhHoL" cm:name="Display" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
-      <cm:relations cm:id="iyo-B1BXj14T29PnM" cm:class="ps:parents">
-        <cm:relation cm:id="iIhqWnlYcP5Fe8Ej5" cm:type="ps:parent">
-          <cm:target cm:id="i91tsf3XXlaFAVlaz">./it7CBIxVwkJ7s-PA7</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:relations cm:id="iBX5SqLXQrb8yazUG" cm:class="ps:children">
-        <cm:relation cm:id="i9eWdyREwN9dITerv" cm:type="ps:or" cm:range="[1,n]">
-          <cm:target cm:id="iZ-dNZkZEzQT8yV0K">./iRMKQSox3K7VWxlzV</cm:target>
-          <cm:target cm:id="i02On29IlRlIx4LBH">./iFIZUfLEVzbKzamOe</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="iiR15dDDbdpQmcxqn" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="iVYzEtupVWXBVIpA_" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iLWq0qtWHaxh1610e" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="iETpqEgsNaLkMQHV9" cm:type="ps:datetime">2020-02-20T23:34:23.005Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iNTkgjjbVYuB93wfb" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="i6tygsZQDSxKmyDdS" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iIuKl3CJGcdicbEi_" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="izsOvWP-6-g9BzgKh" cm:type="ps:datetime">2020-02-20T23:35:04.599Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="iRMKQSox3K7VWxlzV" cm:name="MultiLine" cm:type="ps:feature" cm:class="ps:feature">
-      <cm:relations cm:id="i7E96Zr1dASh8bk29" cm:class="ps:parents">
-        <cm:relation cm:id="iKwqKVhw_NVfUoGQs" cm:type="ps:parent">
-          <cm:target cm:id="iRC0gY-lCT-uaOi04">./ibWOBhMwQM5PzhHoL</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="irY5IMyiKSU7k1WoZ" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="izHPyevQZh9yZpX0T" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="inbvnwB2X71pxGAWW" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="irmjob5RpL6gq7Qpf" cm:type="ps:datetime">2020-02-20T23:34:49.818Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iN0a1gUSWxkHoiAt6" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="ilRi3ZMYeXqVULaMN" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="idD1O1HNKB10jRcrb" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iPQEXWL5y6NSYz4mu" cm:type="ps:datetime">2020-02-20T23:34:49.818Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="iFIZUfLEVzbKzamOe" cm:name="LCD" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
-      <cm:relations cm:id="i0HnNc9FDQAPQjphK" cm:class="ps:parents">
-        <cm:relation cm:id="iUpKlEHXfLyHHR1Zw" cm:type="ps:parent">
-          <cm:target cm:id="iBKommCA4RO2VKp5h">./ibWOBhMwQM5PzhHoL</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="ixh0b7Z2AFOHfGRPX" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="iY227Ae4NmYfZtBIA" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iyQQaJxFg3W8wfLmt" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="iwV3Fm9CJEdX9Yax4" cm:type="ps:datetime">2020-02-20T23:35:04.599Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iwlXNfnVtADDMj_He" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iQeW-ew7UScBYkJoC" cm:type="ps:string">Administrator</cm:constant>
-        </cm:property>
-        <cm:property cm:id="icWJj_3PzlCodPyt_" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iDJdtIoSjUfNypxmG" cm:type="ps:datetime">2020-02-20T23:35:04.599Z</cm:constant>
+          <cm:constant cm:id="i8d8MWXM9exqiEMYK" cm:type="ps:datetime">2020-04-12T07:16:36.702Z</cm:constant>
         </cm:property>
       </cm:properties>
     </cm:element>
@@ -611,9 +212,8 @@
         </cm:relation>
       </cm:relations>
       <cm:relations cm:id="ioD5LtN2jd7jKA1I0" cm:class="ps:children">
-        <cm:relation cm:id="iwmGMJhbwNIK7tMgD" cm:type="ps:mandatory" cm:range="n">
-          <cm:target cm:id="iVQNzQ5S70wxyvpUy">./irEGiZPjVEwBmDLB9</cm:target>
-          <cm:target cm:id="iIacxOTdBNP0jADQH">./iVWwxxHSJNO6z9QYh</cm:target>
+        <cm:relation cm:id="i2GbvTkFv3-8l4oGp" cm:type="ps:optional" cm:range="[0,n]">
+          <cm:target cm:id="ioKKaeqzakaB5Zw-4">./irEGiZPjVEwBmDLB9</cm:target>
         </cm:relation>
       </cm:relations>
       <cm:properties>
@@ -624,26 +224,24 @@
           <cm:constant cm:id="itILLLIi-GnTiUJ5s" cm:type="ps:datetime">2020-04-04T13:20:06.094Z</cm:constant>
         </cm:property>
         <cm:property cm:id="iaT7p4RydZwO-dSvO" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iLScCCEfIHxEIeHn0" cm:type="ps:string">dingjian</cm:constant>
+          <cm:constant cm:id="iLScCCEfIHxEIeHn0" cm:type="ps:string">xuya</cm:constant>
         </cm:property>
         <cm:property cm:id="igdNB6-LviEiqdPN5" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iSa70k8XZQi1JKkbf" cm:type="ps:datetime">2020-04-04T13:22:28.601Z</cm:constant>
+          <cm:constant cm:id="iSa70k8XZQi1JKkbf" cm:type="ps:datetime">2020-04-11T14:13:36.036Z</cm:constant>
         </cm:property>
       </cm:properties>
     </cm:element>
-    <cm:element cm:id="irEGiZPjVEwBmDLB9" cm:name="PaymentWay" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+    <cm:element cm:id="irEGiZPjVEwBmDLB9" cm:name="PaymentWay" cm:type="ps:feature" cm:class="ps:feature">
       <cm:relations cm:id="izXlNP77IjkrPJP0G" cm:class="ps:parents">
         <cm:relation cm:id="iMMXsE39aR7o5O3-g" cm:type="ps:parent">
           <cm:target cm:id="ijdk5LqokTeADmycE">./ixqKfge2Bti2z13yx</cm:target>
         </cm:relation>
       </cm:relations>
       <cm:relations cm:id="iBNSOpOEoNIkOqsca" cm:class="ps:children">
-        <cm:relation cm:id="i9IYvf195j1RHYFtl" cm:type="ps:mandatory">
-          <cm:target cm:id="itVfS6-kmOv1kChO7">./iJnCPvBSKrEsG6NiV</cm:target>
-        </cm:relation>
-        <cm:relation cm:id="ik1afCzHijdy-R40n" cm:type="ps:or">
-          <cm:target cm:id="ikVOgRDwTbNv7KKX2">./ibJUwNOmwX4Xckilq</cm:target>
-          <cm:target cm:id="iq8iJWx5xz9rm1jip">./ic4R4SxXg21AIhQDW</cm:target>
+        <cm:relation cm:id="i1TYaQ-URLjQmjftv" cm:type="ps:optional" cm:range="[0,n]">
+          <cm:target cm:id="ifJUGbLQj4ZnuFRRg">./iJnCPvBSKrEsG6NiV</cm:target>
+          <cm:target cm:id="iPNdmCciaH42zCrD9">./ibJUwNOmwX4Xckilq</cm:target>
+          <cm:target cm:id="ijOxHI_kdTw_JU8BG">./ic4R4SxXg21AIhQDW</cm:target>
         </cm:relation>
       </cm:relations>
       <cm:properties>
@@ -654,83 +252,14 @@
           <cm:constant cm:id="inhWM8699U_szQWF7" cm:type="ps:datetime">2020-04-04T13:21:47.164Z</cm:constant>
         </cm:property>
         <cm:property cm:id="i4NrN12WmhlR6guy3" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="i3vMf8RsMWEg_meYd" cm:type="ps:string">dingjian</cm:constant>
+          <cm:constant cm:id="i3vMf8RsMWEg_meYd" cm:type="ps:string">xuya</cm:constant>
         </cm:property>
         <cm:property cm:id="i2f-ClCswTVqYTaZm" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="isVvehmpCk9UguHTh" cm:type="ps:datetime">2020-04-04T13:26:53.565Z</cm:constant>
+          <cm:constant cm:id="isVvehmpCk9UguHTh" cm:type="ps:datetime">2020-04-11T14:13:55.613Z</cm:constant>
         </cm:property>
       </cm:properties>
     </cm:element>
-    <cm:element cm:id="iVWwxxHSJNO6z9QYh" cm:name="PaymentSequence" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
-      <cm:relations cm:id="i5qcg6FqSQQZdwWa9" cm:class="ps:parents">
-        <cm:relation cm:id="ili2hKCM5CfnVWrCp" cm:type="ps:parent">
-          <cm:target cm:id="ivdU11cNMO1t20XsZ">./ixqKfge2Bti2z13yx</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:relations cm:id="iidgJaYSEh5fDdnYT" cm:class="ps:children">
-        <cm:relation cm:id="iGF9BMwMjutI1cfkW" cm:type="ps:alternative" cm:range="1">
-          <cm:target cm:id="icTBvVMpU1d-r7Nd3">./iGCYVE4-iAqDO054t</cm:target>
-          <cm:target cm:id="iAuxSAMEfU9QY8QZW">./ixmn5j8bFIYiBQygM</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="i-e3j5RdIXS9ybYox" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="i7D1mrJBHdnIkyqwi" cm:type="ps:string">dingjian</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iWRTb-06dlVjI8iyB" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="iH0fYubXimXfkDiGo" cm:type="ps:datetime">2020-04-04T13:22:28.602Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="izCy6qD24ruT39MQf" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="i56HCDdfxgqkiHEfk" cm:type="ps:string">dingjian</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ibk1bXb9tCtmB5Elg" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iNXCtQiDnoybwwJgk" cm:type="ps:datetime">2020-04-04T13:23:57.884Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="ixmn5j8bFIYiBQygM" cm:name="PaymentBeforeSelection" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
-      <cm:relations cm:id="isk-a7hbUPGuE_EN0" cm:class="ps:parents">
-        <cm:relation cm:id="iKsuvO47MLeMbyUVw" cm:type="ps:parent">
-          <cm:target cm:id="ipPU2zeH_oOFcWTQh">./iVWwxxHSJNO6z9QYh</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="irhEFOotucIJQJZx8" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="ievnmyz1xdoUK2MOq" cm:type="ps:string">dingjian</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iZHo3lHUh8-9j6Rkq" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="i7dQJ7FVGAdASAYkM" cm:type="ps:datetime">2020-04-04T13:23:22.171Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i42o9ebtIRLhbfCP_" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="inCZ4DeIrWZCB8ZEP" cm:type="ps:string">dingjian</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ikSFRbRiLUk-dkjoR" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="i5-69tYKZAOUEPuwn" cm:type="ps:datetime">2020-04-04T13:23:57.884Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="iGCYVE4-iAqDO054t" cm:name="SelectionBeforePayment" cm:type="ps:feature" cm:class="ps:feature">
-      <cm:relations cm:id="ioPROaEPiNWpBCCK9" cm:class="ps:parents">
-        <cm:relation cm:id="iajstlkGesk07lkOP" cm:type="ps:parent">
-          <cm:target cm:id="iiOiCHZRtvZI2qCaF">./iVWwxxHSJNO6z9QYh</cm:target>
-        </cm:relation>
-      </cm:relations>
-      <cm:properties>
-        <cm:property cm:id="iayFRH98e6UHlSHwu" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
-          <cm:constant cm:id="iqCS0Qt79Qot8dyoR" cm:type="ps:string">dingjian</cm:constant>
-        </cm:property>
-        <cm:property cm:id="i47ahHC4RAGW-7mHL" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
-          <cm:constant cm:id="i1DX3otLDShtzIgH0" cm:type="ps:datetime">2020-04-04T13:23:46.548Z</cm:constant>
-        </cm:property>
-        <cm:property cm:id="iz2ZWfXPiVBflxmmo" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="i9k6Vnz5VCJ-ePI_h" cm:type="ps:string">dingjian</cm:constant>
-        </cm:property>
-        <cm:property cm:id="ibHnjQ1Dgil-c3CkH" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="icY90r6d4XXqSi17v" cm:type="ps:datetime">2020-04-04T13:23:46.548Z</cm:constant>
-        </cm:property>
-      </cm:properties>
-    </cm:element>
-    <cm:element cm:id="iJnCPvBSKrEsG6NiV" cm:name="Coin" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+    <cm:element cm:id="iJnCPvBSKrEsG6NiV" cm:name="Coin" cm:type="ps:feature" cm:class="ps:feature">
       <cm:relations cm:id="inKxKBlLg-Hd6wXkl" cm:class="ps:parents">
         <cm:relation cm:id="iNBJTlkDwpWj1E9iZ" cm:type="ps:parent">
           <cm:target cm:id="iRpNMORbNeDvod1Sh">./irEGiZPjVEwBmDLB9</cm:target>
@@ -744,17 +273,22 @@
           <cm:constant cm:id="iPMnxAJJsNva8oFtI" cm:type="ps:datetime">2020-04-04T13:24:44.199Z</cm:constant>
         </cm:property>
         <cm:property cm:id="i8STkIBEkS5MQPngg" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iBPUSKwI7x9wifZH3" cm:type="ps:string">dingjian</cm:constant>
+          <cm:constant cm:id="iBPUSKwI7x9wifZH3" cm:type="ps:string">xuya</cm:constant>
         </cm:property>
         <cm:property cm:id="iYmKD0nOB27NDnaBk" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="i3FnUY0lcqvl92H3J" cm:type="ps:datetime">2020-04-04T13:26:26.982Z</cm:constant>
+          <cm:constant cm:id="i3FnUY0lcqvl92H3J" cm:type="ps:datetime">2020-04-11T14:13:40.324Z</cm:constant>
         </cm:property>
       </cm:properties>
     </cm:element>
-    <cm:element cm:id="ic4R4SxXg21AIhQDW" cm:name="Note" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+    <cm:element cm:id="ic4R4SxXg21AIhQDW" cm:name="Note" cm:type="ps:feature" cm:class="ps:feature">
       <cm:relations cm:id="iFuLnUb2AM4nPn4N7" cm:class="ps:parents">
         <cm:relation cm:id="if-v_L90TI392icjv" cm:type="ps:parent">
           <cm:target cm:id="iZxSiD6xjt1Dwk8g9">./irEGiZPjVEwBmDLB9</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="inCoPdnrfLittW40c" cm:class="ps:dependencies">
+        <cm:relation cm:id="iKdEONIEdp3b6siVw" cm:type="ps:requires">
+          <cm:target cm:id="iLU3ZQG1d-7V6uUBW">iyYl3e3ATE1xYYDmV/iJnCPvBSKrEsG6NiV</cm:target>
         </cm:relation>
       </cm:relations>
       <cm:properties>
@@ -765,14 +299,14 @@
           <cm:constant cm:id="iLBTa7PiRpCrG3PsR" cm:type="ps:datetime">2020-04-04T13:25:31.973Z</cm:constant>
         </cm:property>
         <cm:property cm:id="isIw15ssXMdfJhrTL" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iHPM7d2AplzVZUlkb" cm:type="ps:string">dingjian</cm:constant>
+          <cm:constant cm:id="iHPM7d2AplzVZUlkb" cm:type="ps:string">xuya</cm:constant>
         </cm:property>
         <cm:property cm:id="igjfi2o1dQuhak4XL" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iZ_GuwoZ15TG8m3OM" cm:type="ps:datetime">2020-04-04T13:25:31.973Z</cm:constant>
+          <cm:constant cm:id="iZ_GuwoZ15TG8m3OM" cm:type="ps:datetime">2020-04-12T07:18:02.133Z</cm:constant>
         </cm:property>
       </cm:properties>
     </cm:element>
-    <cm:element cm:id="ibJUwNOmwX4Xckilq" cm:name="CreditCard" cm:type="ps:feature" cm:class="ps:feature" cm:default="off">
+    <cm:element cm:id="ibJUwNOmwX4Xckilq" cm:name="CreditCard" cm:type="ps:feature" cm:class="ps:feature">
       <cm:relations cm:id="iXaHaSS7Mm6kl8jUD" cm:class="ps:parents">
         <cm:relation cm:id="iezJ5FxFBQP9ukUS1" cm:type="ps:parent">
           <cm:target cm:id="i73-sxgMv8WDHPJln">./irEGiZPjVEwBmDLB9</cm:target>
@@ -786,10 +320,10 @@
           <cm:constant cm:id="ia7lIZJFiIG3scT4G" cm:type="ps:datetime">2020-04-04T13:25:58.001Z</cm:constant>
         </cm:property>
         <cm:property cm:id="iSRVsatcWCL3paFKn" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="il2UWUN6-h9SdgWNL" cm:type="ps:string">dingjian</cm:constant>
+          <cm:constant cm:id="il2UWUN6-h9SdgWNL" cm:type="ps:string">xuya</cm:constant>
         </cm:property>
         <cm:property cm:id="ieLq-M83ytL7sBAxp" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iTovn3kM5Ya0ja1s1" cm:type="ps:datetime">2020-04-04T13:25:58.001Z</cm:constant>
+          <cm:constant cm:id="iTovn3kM5Ya0ja1s1" cm:type="ps:datetime">2020-04-11T14:13:52.029Z</cm:constant>
         </cm:property>
       </cm:properties>
     </cm:element>
@@ -800,11 +334,9 @@
         </cm:relation>
       </cm:relations>
       <cm:relations cm:id="ikgOEheKoHsks0rXy" cm:class="ps:children">
-        <cm:relation cm:id="i6vB-FKkuyYkVgXBk" cm:type="ps:mandatory">
-          <cm:target cm:id="i6uXS4TfMuCxrHh7R">./i9G4VboEt1kwf03m6</cm:target>
-        </cm:relation>
-        <cm:relation cm:id="iVuWkpm4ppIqRjy5t" cm:type="ps:or" cm:range="[1,n]">
-          <cm:target cm:id="i5T8kzMFSmeG4YHPh">./iHZVgQ6iSrhpTy8Iq</cm:target>
+        <cm:relation cm:id="iOtMryy3MGXsTlF0w" cm:type="ps:alternative" cm:range="1">
+          <cm:target cm:id="itDXyRFFLxT3M6Gfy">./i9G4VboEt1kwf03m6</cm:target>
+          <cm:target cm:id="iPUHHCwZiYMpqcljH">./iHZVgQ6iSrhpTy8Iq</cm:target>
         </cm:relation>
       </cm:relations>
       <cm:properties>
@@ -815,14 +347,14 @@
           <cm:constant cm:id="iKCDj-hEGWn8NeWFW" cm:type="ps:datetime">2020-04-04T13:45:18.270Z</cm:constant>
         </cm:property>
         <cm:property cm:id="iJbFanU7m8uMkZxlD" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="iURKRzeD0S_oZ_the" cm:type="ps:string">dingjian</cm:constant>
+          <cm:constant cm:id="iURKRzeD0S_oZ_the" cm:type="ps:string">xuya</cm:constant>
         </cm:property>
         <cm:property cm:id="ieaRwTS3jT-v46HWI" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iHEMKPqZHM3Z_CaNo" cm:type="ps:datetime">2020-04-04T13:46:15.552Z</cm:constant>
+          <cm:constant cm:id="iHEMKPqZHM3Z_CaNo" cm:type="ps:datetime">2020-04-11T14:19:15.099Z</cm:constant>
         </cm:property>
       </cm:properties>
     </cm:element>
-    <cm:element cm:id="i9G4VboEt1kwf03m6" cm:name="Button" cm:type="ps:feature" cm:class="ps:feature" cm:default="on">
+    <cm:element cm:id="i9G4VboEt1kwf03m6" cm:name="Button" cm:type="ps:feature" cm:class="ps:feature">
       <cm:relations cm:id="isOX9LjHQ4qwsDxd_" cm:class="ps:parents">
         <cm:relation cm:id="iDMoPd1ePSIj3wbIL" cm:type="ps:parent">
           <cm:target cm:id="i1ecLU86wx7Ilyw-z">./i5h2-OdUsKV2_6cqm</cm:target>
@@ -836,14 +368,14 @@
           <cm:constant cm:id="i7WbBCZCj5LPhAjud" cm:type="ps:datetime">2020-04-04T13:45:32.424Z</cm:constant>
         </cm:property>
         <cm:property cm:id="ixdAjto_VPmVgAOc2" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="i5ZmQqIh5vY0jeUQ5" cm:type="ps:string">dingjian</cm:constant>
+          <cm:constant cm:id="i5ZmQqIh5vY0jeUQ5" cm:type="ps:string">xuya</cm:constant>
         </cm:property>
         <cm:property cm:id="iZFgMe_PT3EvWC_s4" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="ir_SeOgtVeCVvc5na" cm:type="ps:datetime">2020-04-04T13:45:32.424Z</cm:constant>
+          <cm:constant cm:id="ir_SeOgtVeCVvc5na" cm:type="ps:datetime">2020-04-11T14:19:11.530Z</cm:constant>
         </cm:property>
       </cm:properties>
     </cm:element>
-    <cm:element cm:id="iHZVgQ6iSrhpTy8Iq" cm:name="keypad" cm:type="ps:feature" cm:class="ps:feature">
+    <cm:element cm:id="iHZVgQ6iSrhpTy8Iq" cm:name="Keypad" cm:type="ps:feature" cm:class="ps:feature">
       <cm:relations cm:id="ij6UCWk0w--ZH2iv8" cm:class="ps:parents">
         <cm:relation cm:id="ifl4Bh6Ge2ov22gm6" cm:type="ps:parent">
           <cm:target cm:id="i-rc0Zo8M2YQoAI0P">./i5h2-OdUsKV2_6cqm</cm:target>
@@ -857,10 +389,10 @@
           <cm:constant cm:id="iM_Drpx79vbAd5egP" cm:type="ps:datetime">2020-04-04T13:46:15.552Z</cm:constant>
         </cm:property>
         <cm:property cm:id="iby00srZnBPaLOLSe" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
-          <cm:constant cm:id="i7vMAEPhsZRA8GIVD" cm:type="ps:string">dingjian</cm:constant>
+          <cm:constant cm:id="i7vMAEPhsZRA8GIVD" cm:type="ps:string">xuya</cm:constant>
         </cm:property>
         <cm:property cm:id="i1yGMz0Ufv4fAubLf" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iwQr0f8n6-u-K4dbK" cm:type="ps:datetime">2020-04-04T13:46:15.552Z</cm:constant>
+          <cm:constant cm:id="iwQr0f8n6-u-K4dbK" cm:type="ps:datetime">2020-04-11T14:19:08.405Z</cm:constant>
         </cm:property>
       </cm:properties>
     </cm:element>
