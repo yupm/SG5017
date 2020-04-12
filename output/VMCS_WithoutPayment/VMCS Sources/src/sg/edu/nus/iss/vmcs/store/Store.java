@@ -29,6 +29,8 @@ public abstract class Store {
 	public final static int CASH  = 1;
 	/**This constant attribute represnet Drink*/
 	public final static int DRINK = 2;
+	
+	public final static int NOTE = 3;
 	/**This attribute hold the size of the store*/
 	protected int size;
     /**This attribute hold the items of the store*/

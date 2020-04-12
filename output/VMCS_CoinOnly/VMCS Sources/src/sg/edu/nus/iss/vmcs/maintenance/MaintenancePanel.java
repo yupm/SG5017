@@ -18,8 +18,11 @@ import java.awt.GridLayout;
 import java.awt.Label;
 import java.awt.Panel;
 import java.awt.Toolkit;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 import sg.edu.nus.iss.vmcs.store.Store;
+import sg.edu.nus.iss.vmcs.system.SimulatorControlPanel;
 import sg.edu.nus.iss.vmcs.util.LabelledDisplay;
 import sg.edu.nus.iss.vmcs.util.VMCSException;
 import sg.edu.nus.iss.vmcs.util.WarningDisplay;
@@ -66,6 +69,8 @@ public class MaintenancePanel extends Dialog {
 	private LabelledDisplay collectCash;
 	private Button exitBtn;
 	private CoinDisplay cDisplay; // need to be access from other class.
+	private NoteDisplay nDisplay; // need to be access from other class.
+	
 	private DrinkDisplay dDisplay; // need to be access from other class.
 	private ButtonItem totalCash;
 	private Button transferCash;
@@ -110,6 +115,9 @@ public class MaintenancePanel extends Dialog {
 		tpc.setLayout(new GridLayout(0, 1));
 
 		cDisplay = new CoinDisplay(mctrl);
+		nDisplay = new NoteDisplay(mctrl);
+		
+		
 		dDisplay = new DrinkDisplay(mctrl);
 
 		Panel tp5 = new Panel();
@@ -141,6 +149,8 @@ public class MaintenancePanel extends Dialog {
 		Panel pp = new Panel();
 		pp.setLayout(new GridLayout(1, 2));
 		pp.add(cDisplay);
+		pp.add(nDisplay);
+		
 		pp.add(dDisplay);
 		tpc.add("Center", pp);
 		tpc.add("South", tp5);
@@ -155,6 +165,14 @@ public class MaintenancePanel extends Dialog {
         frameX=(screenWidth-frameWidth);
         frameY=0;
         setBounds(frameX,frameY,frameWidth, frameHeight);
+        
+        
+    	addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent ev) {
+				mctrl.getMainController().getSimulatorControlPanel().setButtonState(SimulatorControlPanel.ACT_MAINTAINER,true);
+				dispose();
+			}
+		});
 	}
 
 	/**
@@ -186,6 +204,15 @@ public class MaintenancePanel extends Dialog {
 	 */
 	public CoinDisplay getCoinDisplay() {
 		return cDisplay;
+	}
+
+
+	/**
+	 * This method returns the CoinDisplay.
+	 * @return the CoinDisplay.
+	 */
+	public NoteDisplay getNoteDisplay() {
+		return nDisplay;
 	}
 
 	/**
@@ -229,6 +256,7 @@ public class MaintenancePanel extends Dialog {
 				collectCash.setActive(st);
 				cDisplay.setActive(st);
 				dDisplay.setActive(st);
+				nDisplay.setActive(st);
 				totalCash.setActive(st);
 				transferCash.setEnabled(st);
 				break;
@@ -261,11 +289,14 @@ public class MaintenancePanel extends Dialog {
 	/**
 	 * This method displays the amount of money to be issued on the Cash Collection
 	 * Tray Display.
-	 * @param cc the collected cash.
+	 * @param qualitity the collected cash.
 	 */
-	public void displayCoins(int cc) {
-		collectCash.setValue(cc);
+	public void displayCollectCash(int collectedQualitity) {
+		collectCash.setValue(collectedQualitity);
 	}
+	
+ 
+
 
 	/**
 	 *  Use when machinery simulator panel changes qty;
@@ -278,7 +309,11 @@ public class MaintenancePanel extends Dialog {
 		throws VMCSException {
 		if (type == Store.CASH) {
 			cDisplay.displayQty(idx, qty);
-		} else
+		}
+		else if(type== Store.NOTE) {
+			nDisplay.displayQty(idx, qty);
+		}
+		else
 			dDisplay.displayQty(idx, qty);
 	}
 
@@ -290,10 +325,15 @@ public class MaintenancePanel extends Dialog {
 	public void updateCurrentQtyDisplay(int type, int qty)
 		throws VMCSException {
 		int curIdx;
-		if (type == Store.CASH)
+		if (type == Store.CASH){
 			curIdx = cDisplay.getCurIdx();
-		else
+		}
+		else if(type== Store.NOTE) {
+			curIdx = nDisplay.getCurIdx();
+		}
+		else {
 			curIdx = dDisplay.getCurIdx();
+		}
 		updateQtyDisplay(type, curIdx, qty);
 	}
 

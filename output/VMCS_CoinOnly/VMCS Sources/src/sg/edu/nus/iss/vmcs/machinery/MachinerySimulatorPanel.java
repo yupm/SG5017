@@ -33,6 +33,8 @@ public class MachinerySimulatorPanel extends Dialog {
 
 	private StoreViewer cashDisplay;
 	private StoreViewer drinksDisplay;
+	private StoreViewer noteDisplay;
+	
 	private Checkbox doorDisplay;
 	private StoreController storeCtrl;
 	private MachineryController machineryCtrl;
@@ -54,10 +56,12 @@ public class MachinerySimulatorPanel extends Dialog {
 
 		cashDisplay = new StoreViewer(Store.CASH, storeCtrl);
 		drinksDisplay = new StoreViewer(Store.DRINK, storeCtrl);
-
+		noteDisplay  = new StoreViewer(Store.NOTE, storeCtrl);
+		
 		Panel tp = new Panel();
 		tp.setLayout(new GridLayout(0, 1));
 		tp.add(cashDisplay);
+		tp.add(noteDisplay);
 		tp.add(drinksDisplay);
 
 		Panel dp = new Panel();
@@ -113,6 +117,15 @@ public class MachinerySimulatorPanel extends Dialog {
 	 * This method returns the DrinksDisplay:StoreViewer.
 	 * @return the DrinksDisplay:StoreViewer.
 	 */
+	public StoreViewer getNoteStoreDisplay() {
+		return noteDisplay;
+	}
+
+
+	/**
+	 * This method returns the DrinksDisplay:StoreViewer.
+	 * @return the DrinksDisplay:StoreViewer.
+	 */
 	public StoreViewer getDrinksStoreDisplay() {
 		return drinksDisplay;
 	}
@@ -133,6 +146,7 @@ public class MachinerySimulatorPanel extends Dialog {
 	public void refresh(){
 		cashDisplay.update();
 		drinksDisplay.update();
+		noteDisplay.update();
 	}
 	
 	/**
@@ -142,6 +156,7 @@ public class MachinerySimulatorPanel extends Dialog {
 	public void setActive(boolean state) {
 		cashDisplay.setActive(state);
 		drinksDisplay.setActive(state);
+		noteDisplay.setActive(state);
 		doorDisplay.setEnabled(state);
 	}
 }//End of class MachinerySimulatorPanel

@@ -14,6 +14,7 @@ import sg.edu.nus.iss.vmcs.machinery.MachineryController;
 import sg.edu.nus.iss.vmcs.store.CashStoreItem;
 import sg.edu.nus.iss.vmcs.store.DrinksBrand;
 import sg.edu.nus.iss.vmcs.store.DrinksStoreItem;
+import sg.edu.nus.iss.vmcs.store.NoteStoreItem;
 import sg.edu.nus.iss.vmcs.store.Store;
 import sg.edu.nus.iss.vmcs.store.StoreController;
 import sg.edu.nus.iss.vmcs.system.MainController;
@@ -119,6 +120,25 @@ public class MaintenanceController {
 		}
 
 	}
+	
+	
+	/**
+	 * This method will be used to get the total number of coins of a selected denomination&#46
+	 * This method invoked in CoinDisplayListener.
+	 * @param idx the index of the Coin.
+	 */
+	public void displayNote(int idx) {
+		StoreController sctrl = mCtrl.getStoreController();
+		NoteStoreItem item;
+		try {
+			item = (NoteStoreItem) sctrl.getStoreItem(Store.NOTE, idx);
+			mpanel.getNoteDisplay().displayQty(idx, item.getQuantity());
+		} catch (VMCSException e) {
+			System.out.println("MaintenanceController.dispalyNote:" + e);
+		}
+
+	}
+
 
 	/**
 	 * This method will get the drink stock value and prices (for a specific brand) for
@@ -171,15 +191,18 @@ public class MaintenanceController {
 		StoreController sctrl = mCtrl.getStoreController();
 		MachineryController machctrl = mCtrl.getMachineryController();
 
-		int cc; // coin quantity;
+		int cc; // cash quantity;
 
 		try {
 			cc = sctrl.transferAll();
-			mpanel.displayCoins(cc);
+			mpanel.displayCollectCash(cc);
 			machctrl.displayCoinStock();
+			machctrl.displayNoteStock();
 			// the cash qty current is displayed in the Maintenance panel needs to be update to be 0;
 			// not required.
 			mpanel.updateCurrentQtyDisplay(Store.CASH, 0);
+			mpanel.updateCurrentQtyDisplay(Store.NOTE, 0);
+			
 		} catch (VMCSException e) {
 			System.out.println("MaintenanceController.transferAll:" + e);
 		}

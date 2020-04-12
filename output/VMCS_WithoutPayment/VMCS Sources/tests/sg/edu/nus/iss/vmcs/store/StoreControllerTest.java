@@ -10,6 +10,7 @@ import sg.edu.nus.iss.vmcs.system.CashPropertyLoader;
 import sg.edu.nus.iss.vmcs.system.DrinkPropertyLoader;
 import sg.edu.nus.iss.vmcs.system.Environment;
 import sg.edu.nus.iss.vmcs.system.MainController;
+import sg.edu.nus.iss.vmcs.system.NotePropertyLoader;
 
 public class StoreControllerTest extends TestCase{
 	private String propertyFilename=System.getProperty("propertyFilename");
@@ -30,15 +31,18 @@ public class StoreControllerTest extends TestCase{
 			new CashPropertyLoader(Environment.getCashPropFile());
 		DrinkPropertyLoader drinksLoader =
 			new DrinkPropertyLoader(Environment.getDrinkPropFile());
+		NotePropertyLoader noteLoader =
+				new NotePropertyLoader(Environment.getNotePropFile());
 		cashLoader.initialize();
 		drinksLoader.initialize();
 		//Act
-		StoreController storeController=new StoreController(cashLoader, drinksLoader);
+		StoreController storeController=new StoreController(cashLoader, drinksLoader, noteLoader);
 		storeController.initialize();
 		//Assert
 		assertNotNull(storeController);
 		assertNotNull(storeController.getStore(Store.CASH));
 		assertNotNull(storeController.getStore(Store.DRINK));
+		assertNotNull(storeController.getStore(Store.NOTE));
 	}
 	
 	@Test
@@ -51,10 +55,12 @@ public class StoreControllerTest extends TestCase{
 		storeController.initialize();		
 		CashStore cashStore=(CashStore)storeController.getStore(Store.CASH);
 		DrinksStore drinksStore=(DrinksStore)storeController.getStore(Store.DRINK);
+		NoteStore noteStore=(NoteStore)storeController.getStore(Store.NOTE);
 		
 		//Assert
 		assertNotNull(cashStore);
 		assertNotNull(drinksStore);
+		assertNotNull(noteStore);
 	}
 
 	@Test

@@ -6,4 +6,5 @@ public enum PaymentType{
 	Cash,
 	CoinWithCard,
 	CashWithCard,
+	CardOnly
 }

@@ -153,6 +153,19 @@ public class MachineryController {
 		ml.getCashStoreDisplay().update();
 	}
 
+	/**
+	 * This method update coin stock view after transfer all cash&#46;
+	 * This method will get the stock values of coin denominations from the CashStore and
+	 * display them on the MachinerySimulatorPanel.
+	 * @throws VMCSException if fail to update cash store display.
+	 */
+	public void displayNoteStock() throws VMCSException {
+		if (ml == null)
+			return;
+		ml.getNoteStoreDisplay().update();
+	}
+
+	
 	/* ************************************************************
 	 * Interactions with the Store that need to update the display
 	 */
@@ -167,6 +180,13 @@ public class MachineryController {
 		if (ml != null)
 			ml.getCashStoreDisplay().update();
 	}
+	
+	public void storeNote(Note c) throws VMCSException {
+		storeCtrl.storeNote(c);
+		if (ml != null)
+			ml.getNoteStoreDisplay().update();
+	}
+
 
 	/**
 	 * This method instructs the DrinksStore to dispense one drink, and then

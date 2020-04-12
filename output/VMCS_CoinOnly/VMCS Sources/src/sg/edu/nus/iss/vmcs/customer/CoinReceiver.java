@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import sg.edu.nus.iss.vmcs.machinery.MachineryController;
 import sg.edu.nus.iss.vmcs.store.CashStore;
 import sg.edu.nus.iss.vmcs.store.Coin;
+import sg.edu.nus.iss.vmcs.store.Note;
+import sg.edu.nus.iss.vmcs.store.NoteStore;
 import sg.edu.nus.iss.vmcs.store.Store;
 import sg.edu.nus.iss.vmcs.util.VMCSException;
 
@@ -25,6 +27,7 @@ public class CoinReceiver {
 	
 	/**List of the Coins entered during the transaction.*/
 	private ArrayList arlCoins;
+	private ArrayList arlNotes;
 	/**Total amount of money entered so far during current transaction.*/
 	private int totalInserted;
 	
@@ -35,6 +38,7 @@ public class CoinReceiver {
 	public CoinReceiver(TransactionController txCtrl){
 		this.txCtrl=txCtrl;
 		arlCoins=new ArrayList();
+		arlNotes=new ArrayList();
 		setTotalInserted(0);
 	}
 	
@@ -45,6 +49,7 @@ public class CoinReceiver {
 	 */
 	public void startReceiver(){
 		txCtrl.getCustomerPanel().setCoinInputBoxActive(true);
+		txCtrl.getCustomerPanel().setNoteInputBoxActive(true);
 		txCtrl.getCustomerPanel().setTotalMoneyInserted(0);
 	}
 	
@@ -76,6 +81,7 @@ public class CoinReceiver {
 		CashStore cashStore=(CashStore)txCtrl.getMainController().getStoreController().getStore(Store.CASH);
 		Coin coin=cashStore.findCoin(weight);
 		if(coin==null){
+			txCtrl.getCustomerPanel().setInvalidCoinLabel("Invalid Coin");
 			txCtrl.getCustomerPanel().displayInvalidCoin(true);
 			txCtrl.getCustomerPanel().setChange("Invalid Coin");
 			//txCtrl.getCustomerPanel().setCoinInputBoxActive(false);
@@ -93,6 +99,29 @@ public class CoinReceiver {
 		}
 	}
 
+	public void receiveNote(double width){
+		NoteStore noteStore=(NoteStore)txCtrl.getMainController().getStoreController().getStore(Store.NOTE);
+		Note note = noteStore.findWidth(width);
+		if(note == null){
+			txCtrl.getCustomerPanel().setInvalidCoinLabel("Invalid Note");
+			txCtrl.getCustomerPanel().displayInvalidCoin(true);
+			txCtrl.getCustomerPanel().setChange("Invalid Note");
+			//txCtrl.getCustomerPanel().setCoinInputBoxActive(false);
+		}
+		else{
+			txCtrl.getCustomerPanel().setCoinInputBoxActive(false);
+			txCtrl.getCustomerPanel().setNoteInputBoxActive(false);
+			int value=note.getValue();
+			txCtrl.getCustomerPanel().displayInvalidCoin(false);
+			arlNotes.add(note);
+			setTotalInserted(getTotalInserted() + value);
+			//int total=txCtrl.getCustomerPanel().addMoney(value);
+			txCtrl.getCustomerPanel().setTotalMoneyInserted(getTotalInserted());
+			txCtrl.getCustomerPanel().setChange("");
+			txCtrl.processMoneyReceived(getTotalInserted());
+		}
+	}
+	
 	/**
 	 * This method will activate the Coin Input Box so that further coins
 	 * can be received.
@@ -112,6 +141,10 @@ public class CoinReceiver {
 			for(int i=0;i<arlCoins.size();i++){
 				Coin coin=(Coin)arlCoins.get(i);
 				machineryCtrl.storeCoin(coin);
+			}
+			for(int i=0;i<arlNotes.size();i++){
+				Note coin=(Note)arlNotes.get(i);
+				machineryCtrl.storeNote(coin);
 			}
 			resetReceived();
 			txCtrl.getCustomerPanel().setTotalMoneyInserted(0);
@@ -133,6 +166,7 @@ public class CoinReceiver {
 			return;
 		}
 		custPanel.setCoinInputBoxActive(false);
+		custPanel.setNoteInputBoxActive(false);
 	}
 	
 	/**
@@ -153,6 +187,7 @@ public class CoinReceiver {
 	 */
 	public void resetReceived(){
 		arlCoins=new ArrayList();
+		arlNotes=new ArrayList();
 		setTotalInserted(0);
 	}
 	
@@ -162,6 +197,7 @@ public class CoinReceiver {
 	 */
 	public void setActive(boolean active){
 		txCtrl.getCustomerPanel().setCoinInputBoxActive(active); 
+		txCtrl.getCustomerPanel().setNoteInputBoxActive(active); 
 	}
 
 	/**

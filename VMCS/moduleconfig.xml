@@ -11,5 +11,11 @@
       <parameter name="in" type="ps:path">$(OUTPUT)\ActionList.xml</parameter>
       <parameter name="destroy" type="ps:boolean"/>
     </module>
+    <module exclude="" id="com.ps.consul.ui.transform.sparxsea.module" include="/variant" name="Enterprise Architect Module" tname="Enterprise Architect Module">
+      <parameter name="file" type="ps:path">VMCS.eap</parameter>
+      <parameter name="dir" type="ps:directory">$(OUTPUT)</parameter>
+      <parameter name="srcfile" type="ps:path">VMCS.eap</parameter>
+      <parameter name="srcdir" type="ps:directory">$(INPUT)</parameter>
+    </module>
   </moduleconfig>
 </moduleconfigs>

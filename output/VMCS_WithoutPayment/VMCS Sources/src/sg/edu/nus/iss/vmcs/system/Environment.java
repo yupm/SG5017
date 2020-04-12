@@ -23,6 +23,8 @@ public class Environment {
 	public final static String DRINK_PROP_FILE = "drinkFile";
 	/**This constant attribute identify the cash property filename*/
 	public final static String CASH_PROP_FILE = "cashFile";
+	public final static String NOTE_PROP_FILE = "noteFile";
+	
 	/**This constant attribute denotes the password string*/
 	public final static String PASSWORD = "password";
 
@@ -62,6 +64,15 @@ public class Environment {
 	public static String getCashPropFile() {
 		String fn;
 		fn = prop.getProperty(CASH_PROP_FILE);
+		return fn;
+	}
+	/**
+	 * This method returns the name/ location of the CashStore properties file.
+	 * @return the mane of the CashStore properties file.
+	 */
+	public static String getNotePropFile() {
+		String fn;
+		fn = prop.getProperty(NOTE_PROP_FILE);
 		return fn;
 	}
 

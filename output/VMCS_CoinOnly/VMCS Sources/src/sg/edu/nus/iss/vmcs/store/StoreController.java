@@ -29,8 +29,10 @@ import java.io.IOException;
 public class StoreController {
 	private CashStore cStore;
 	private DrinksStore dStore;
-
+	private NoteStore nStore;
+	
 	private PropertyLoader cashLoader;
+	private PropertyLoader noteLoader;
 	private PropertyLoader drinksLoader;
 
 	/**
@@ -40,9 +42,11 @@ public class StoreController {
 	 */
 	public StoreController(
 		PropertyLoader cashLoader,
-		PropertyLoader drinksLoader) {
+		PropertyLoader drinksLoader,
+		PropertyLoader noteLoader) {
 		this.cashLoader = cashLoader;
 		this.drinksLoader = drinksLoader;
+		this.noteLoader = noteLoader;
 	}
 
 	/**
@@ -52,6 +56,8 @@ public class StoreController {
 	public void initialize() throws IOException {
 		cStore = new CashStore();
 		dStore = new DrinksStore();
+		nStore = new NoteStore();
+		
 		initializeStores();
 	}
 
@@ -63,6 +69,7 @@ public class StoreController {
 	private void initializeStores() throws IOException {
 		initializeCashStore();
 		initializeDrinkStore();
+		initializeNoteStore();
 	}
 
 	/**
@@ -101,6 +108,17 @@ public class StoreController {
 			cStore.addItem(i, item);
 		}
 	}
+	private void initializeNoteStore() throws IOException {
+
+		// get the cash file from the environment property file;
+		int numOfItems = noteLoader.getNumOfItems();
+		nStore.setStoreSize(numOfItems);
+
+		for (int i = 0; i < numOfItems; i++) {
+			NoteStoreItem item = (NoteStoreItem) noteLoader.getItem(i);
+		    nStore.addItem(i, item);
+		}
+	}
 
 	/**
 	 * This method will instruct the {@link CashStore} to store the {@link Coin} sent as input, and
@@ -113,6 +131,18 @@ public class StoreController {
 		item = (CashStoreItem) this.getStoreItem(Store.CASH, idx);
 		item.increment();
 	}
+	
+	/**
+	 * This method will instruct the {@link NoteStore} to store the {@link Note} sent as input, and
+	 * update the display on the Machinery Simulator Panel.
+	 * @param c the Note to be stored.
+	 */
+	public void storeNote(Note n) {
+		int idx = nStore.findNoteStoreIndex(n);
+		NoteStoreItem item;
+		item = (NoteStoreItem) this.getStoreItem(Store.NOTE, idx);
+		item.increment();
+	}
 
 	/**
 	 * This method return the total size of the {@link Store} of the given type of {@link Store}.
@@ -122,6 +152,8 @@ public class StoreController {
 	public int getStoreSize(int type) {
 		if (type == Store.CASH)
 			return cStore.getStoreSize();
+		else if (type == Store.NOTE)
+			return nStore.getStoreSize();
 		else
 			return dStore.getStoreSize();
 	}
@@ -134,6 +166,8 @@ public class StoreController {
 	public StoreItem[] getStoreItems(int type) {
 		if (type == Store.CASH)
 			return cStore.getItems();
+		else if (type == Store.NOTE)
+			return nStore.getItems();
 		else
 			return dStore.getItems();
 	}
@@ -154,6 +188,8 @@ public class StoreController {
 			System.out.println("StoreController.changeStoreQty: type:"+ type+ " qty:"+ qty);
 			if (type == Store.CASH)
 				cStore.setQuantity(idx, qty);
+			else if (type == Store.NOTE)
+			    nStore.setQuantity(idx, qty);
 			else
 				dStore.setQuantity(idx, qty);
 	}
@@ -167,6 +203,8 @@ public class StoreController {
 	public StoreItem getStoreItem(int type, int idx) {
 		if (type == Store.CASH)
 			return cStore.getStoreItem(idx);
+		else if (type == Store.NOTE)
+			return nStore.getStoreItem(idx);
 		else
 			return dStore.getStoreItem(idx);
 	}
@@ -209,6 +247,19 @@ public class StoreController {
 			val = c.getValue();
 			tc = tc + qty * val;
 		}
+
+		size= nStore.getStoreSize();
+		NoteStoreItem noteItem;
+		Note n;
+		
+		for(i = 0; i< size; i++) {
+			noteItem = (NoteStoreItem) nStore.getStoreItem(i);
+			qty = noteItem.getQuantity();
+			n = (Note) noteItem.getContent();
+			val = n.getValue();
+			tc = tc + qty * val;
+		}
+		
 		return tc;
 	}
 
@@ -219,7 +270,7 @@ public class StoreController {
 	 */
 	public int transferAll()  {
 		int i;
-		int cc = 0; // coin quauntity;
+		int cc = 0; // coin quantity;
 		int size = cStore.getStoreSize();
 
 		CashStoreItem item;
@@ -229,6 +280,15 @@ public class StoreController {
 			item.setQuantity(0);
 		}
 
+		
+		size= nStore.getStoreSize();
+		NoteStoreItem noteItem;
+		for(i = 0; i< size; i++) {
+			noteItem = (NoteStoreItem) nStore.getStoreItem(i);
+			cc = cc + noteItem.getQuantity();
+			noteItem.setQuantity(0);
+		}
+		
 		return cc;
 	}
 
@@ -240,6 +300,7 @@ public class StoreController {
 	public void closeDown() throws IOException {
 		// save back cash property;
 		saveCashProperties();
+		saveNoteProperties();
         saveDrinksProperties();
 	}
 
@@ -255,6 +316,20 @@ public class StoreController {
 		}
 		cashLoader.saveProperty();
 	}
+	
+	/**
+	 * This method saves the attributes of the {@link CashStore} to the input file.
+	 * @throws IOException if fail to save cash properties.
+	 */
+	private void saveNoteProperties() throws IOException {
+		int size = nStore.getStoreSize();
+		noteLoader.setNumOfItems(size);
+		for (int i = 0; i < size; i++) {
+			noteLoader.setItem(i, nStore.getStoreItem(i));
+		}
+		noteLoader.saveProperty();
+	}
+
 
 	/**
 	 * This method saves the attributes of the {@link DrinksStore} to the input file.
@@ -290,6 +365,8 @@ public class StoreController {
 	public Store getStore(int type) {
 		if (type == Store.CASH)
 			return (Store) cStore;
+		else if (type == Store.NOTE)
+			return (Store) nStore;
 		else
 			return (Store) dStore;
 	}

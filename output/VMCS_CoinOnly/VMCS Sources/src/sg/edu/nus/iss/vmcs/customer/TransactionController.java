@@ -21,6 +21,7 @@ import sg.edu.nus.iss.vmcs.store.DrinksBrand;
 import sg.edu.nus.iss.vmcs.store.Store;
 import sg.edu.nus.iss.vmcs.store.StoreItem;
 import sg.edu.nus.iss.vmcs.system.MainController;
+import sg.edu.nus.iss.vmcs.system.PaymentConfiguration;
 import sg.edu.nus.iss.vmcs.system.SimulatorControlPanel;
 
 /**
@@ -35,7 +36,9 @@ public class TransactionController {
 	private DispenseController dispenseCtrl;
 	private ChangeGiver changeGiver;
 	private CoinReceiver coinReceiver;
-
+	private CardReceiver cardReceiver;
+	private PaymentConfiguration paymentSetting;
+	
 	/**Set to TRUE when change is successfully issued during the transaction.*/
 	private boolean changeGiven=false;
 	/**Set to TRUE when the drink is successfully dispensed during the transaction.*/
@@ -53,7 +56,9 @@ public class TransactionController {
 		this.mainCtrl = mainCtrl;
 		dispenseCtrl=new DispenseController(this);
 		coinReceiver=new CoinReceiver(this);
+		cardReceiver = new CardReceiver(this);
 		changeGiver=new ChangeGiver(this);
+		paymentSetting = new PaymentConfiguration();
 	}
 
 	/**
@@ -98,19 +103,14 @@ public class TransactionController {
 		setSelection(drinkIdentifier);
 		StoreItem storeItem=mainCtrl.getStoreController().getStoreItem(Store.DRINK,drinkIdentifier);
 		DrinksBrand drinksBrand=(DrinksBrand)storeItem.getContent();
-		//if(this.paymentMode != PaymentType.None) {
-			setPrice(drinksBrand.getPrice());
-			changeGiver.resetChange();
-			dispenseCtrl.ResetCan();
-			changeGiver.displayChangeStatus();
-			dispenseCtrl.allowSelection(false);
-			coinReceiver.startReceiver();
-			custPanel.setTerminateButtonActive(true);
-//		}else {
-//			dispenseCtrl.ResetCan();
-//			dispenseCtrl.allowSelection(false);
-//			this.completeTransaction();
-//		}
+		setPrice(drinksBrand.getPrice());
+		changeGiver.resetChange();
+		dispenseCtrl.ResetCan();
+		changeGiver.displayChangeStatus();
+		dispenseCtrl.allowSelection(false);
+		coinReceiver.startReceiver();
+		cardReceiver.startReceiver();
+		custPanel.setTerminateButtonActive(true);
 	}
 	
 	/**
@@ -158,6 +158,12 @@ public class TransactionController {
 		else{
 			getCustomerPanel().setChange(0);
 		}
+		
+		this.getCustomerPanel().setCoinInputBoxActive(false);
+		this.getCustomerPanel().setNoteInputBoxActive(false);
+		this.getCustomerPanel().setCardInputBoxActive(false);
+		
+		
 		coinReceiver.storeCash();
 		dispenseCtrl.allowSelection(true);
 		
@@ -336,6 +342,14 @@ public class TransactionController {
 	}
 	
 	/**
+	 * This method returns the CoinReceiver.
+	 * @return the CoinReceiver.
+	 */
+	public PaymentType getPaymentType(){
+		return paymentSetting.getPaymentType();
+	}
+	
+	/**
 	 * This method refreshes the MachinerySimulatorPanel.
 	 */
 	public void refreshMachineryDisplay(){
@@ -348,35 +362,5 @@ public class TransactionController {
 	 */
 	public void nullifyCustomerPanel(){
 		custPanel=null;
-	}
-
-	public void startTransaction(TransactionDto transaction) {
-		// TODO Auto-generated method stub
-//		if(this.getSequenceType() == SequenceType.PayAfter) {
-			setSelection(transaction.drinkIdentifer);
-			StoreItem storeItem=mainCtrl.getStoreController().getStoreItem(Store.DRINK, transaction.drinkIdentifer);
-			DrinksBrand drinksBrand=(DrinksBrand)storeItem.getContent();
-			setPrice(drinksBrand.getPrice());
-			changeGiver.resetChange();
-			dispenseCtrl.ResetCan();
-			changeGiver.displayChangeStatus();
-			dispenseCtrl.allowSelection(false);
-			coinReceiver.startReceiver();
-			custPanel.setTerminateButtonActive(true);
-//		}else {
-//			//setSelection(transaction.drinkIdentifer);
-//			//StoreItem storeItem=mainCtrl.getStoreController().getStoreItem(Store.CASH, transaction.totalInsertedCash);
-//			//DrinksBrand drinksBrand=(Coin)storeItem.getContent();
-//			//setPrice(drinksBrand.getPrice());
-//			changeGiver.resetChange();
-//			dispenseCtrl.ResetCan();
-//			changeGiver.displayChangeStatus();
-//			dispenseCtrl.allowSelection(false);
-//			coinReceiver.startReceiver();
-//			coinReceiver.setTotalInserted(transaction.totalInsertedCash);
-//			custPanel.setTerminateButtonActive(true);
-//		}
-	}
-
-	
+	}	
 }//End of class TransactionController
