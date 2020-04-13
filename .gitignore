@@ -1,2 +1,6 @@
 
 *.class
+logs/
+input/VMCS Sources/NotePropertyFile.txt
+input/VMCS Sources/DrinkPropertyFile.txt
+input/VMCS Sources/DrinkPropertyFile.txt
