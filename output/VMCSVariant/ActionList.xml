@@ -1,0 +1,466 @@
+<?xml version="1.0"?>
+<actionlist xmlns:tm="http://www.pure-systems.com/purevariants/typemodel">
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/itEOBnfqlaFv3vW4xIpAaus-A7ed" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</parameter>
+    <parameter name="src.file">ChangeGiver.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\customer</parameter>
+    <parameter name="dest.file">ChangeGiver.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/i0BZUY0nv5Q3A0_JAo9DjimoRoxl" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</parameter>
+    <parameter name="src.file">CoinButton.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\customer</parameter>
+    <parameter name="dest.file">CoinButton.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iLZAaaCi1mFwuGjBjN5wjuDv9rRh" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</parameter>
+    <parameter name="src.file">CoinInputBox.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\customer</parameter>
+    <parameter name="dest.file">CoinInputBox.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iZpexCPH5f-JS6dQuct8YAoQar5p" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</parameter>
+    <parameter name="src.file">CoinInputListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\customer</parameter>
+    <parameter name="dest.file">CoinInputListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iSuPQDLzUYPXLGMAsvE6w3Jp1w1o" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</parameter>
+    <parameter name="src.file">CoinReceiver.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\customer</parameter>
+    <parameter name="dest.file">CoinReceiver.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iqgkaKgDCAmM5UO25eJw0_ab1Mun" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</parameter>
+    <parameter name="src.file">CustomerPanel.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\customer</parameter>
+    <parameter name="dest.file">CustomerPanel.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/isCqwrcVjpBCsPGaLakqYMceWzgl" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</parameter>
+    <parameter name="src.file">DispenseController.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\customer</parameter>
+    <parameter name="dest.file">DispenseController.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/i-4q5OfnLKHNy604obdt0jIdLZ9f" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</parameter>
+    <parameter name="src.file">DrinkSelectionBox.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\customer</parameter>
+    <parameter name="dest.file">DrinkSelectionBox.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/idNEUSPc_Bj59fdczRtQYl54uNye" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</parameter>
+    <parameter name="src.file">DrinkSelectionItem.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\customer</parameter>
+    <parameter name="dest.file">DrinkSelectionItem.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iRnVrU_FKpVd7z2M-EL3lqUpTMnp" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</parameter>
+    <parameter name="src.file">DrinkSelectionListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\customer</parameter>
+    <parameter name="dest.file">DrinkSelectionListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iXkP1znCJWm6i9CNOvh_CUWsiXxa" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</parameter>
+    <parameter name="src.file">TerminateButtonListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\customer</parameter>
+    <parameter name="dest.file">TerminateButtonListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ijVfOlb8xm79ryu9znyOyotxsurl" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</parameter>
+    <parameter name="src.file">TransactionController.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\customer</parameter>
+    <parameter name="dest.file">TransactionController.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ip65YEGvpITt91Ea22kh5VZ5ARNp" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/customer</parameter>
+    <parameter name="src.file">TransactionDto.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\customer</parameter>
+    <parameter name="dest.file">TransactionDto.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/igLjm_EY3V53ktuZ0qw0N5PHy00h" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/machinery</parameter>
+    <parameter name="src.file">Door.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\machinery</parameter>
+    <parameter name="dest.file">Door.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ivTTKmB9QK0_q_xl4YQna6d6vgUl" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/machinery</parameter>
+    <parameter name="src.file">DoorListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\machinery</parameter>
+    <parameter name="dest.file">DoorListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/im06c3UdJvQ9IzCvvR1-s4RSi7Bb" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/machinery</parameter>
+    <parameter name="src.file">MachineryController.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\machinery</parameter>
+    <parameter name="dest.file">MachineryController.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/infjCxjzMgFS4doQeJp7Re16Xa8d" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/machinery</parameter>
+    <parameter name="src.file">MachinerySimulatorPanel.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\machinery</parameter>
+    <parameter name="dest.file">MachinerySimulatorPanel.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iWx0WmeCFHdfUMrYqV7K5S6lBR7n" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/machinery</parameter>
+    <parameter name="src.file">StoreViewer.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\machinery</parameter>
+    <parameter name="dest.file">StoreViewer.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iXsTDyx77kRz1BwLp0NEeLeGqySl" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/machinery</parameter>
+    <parameter name="src.file">StoreViewerListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\machinery</parameter>
+    <parameter name="dest.file">StoreViewerListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ig5i5Tcddt-CK_CxvcRdWi_uPynm" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">AccessManager.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">AccessManager.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ivFrEURYUl0oPt_0t-LggWtemJvl" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">ButtonItem.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">ButtonItem.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iP1yC2H1OC69aiEjqOWS_v-0uHai" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">ButtonItemDisplay.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">ButtonItemDisplay.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iT37MC5XQFve0tsb6YtdIHR112-l" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">CoinDisplay.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">CoinDisplay.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iPLcfFegpqLN2OB2CSJgkQKGe1Zc" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">CoinDisplayListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">CoinDisplayListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iZpuiYmzoT0CqZ0p6m6hcBg7AGmk" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">DrinkDisplay.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">DrinkDisplay.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ixF_VOGH4R429AFiSXv6dkIt3v3f" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">DrinkDisplayListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">DrinkDisplayListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iD3yfKH63VBpbFg5p79LyHyy2jCb" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">ExitButtonListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">ExitButtonListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iqfk_QyHpEb_Zqfq7e3qehCmxvld" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">MaintenanceController.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">MaintenanceController.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/izwF8NmhZaY-0nyZtoKiOxdZ_WMg" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">MaintenancePanel.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">MaintenancePanel.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/izNZ95bEPMvQyihBAjxatkVCFUBk" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">Password.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">Password.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/izKynyDPpjcxzErdu3zova_FfGjk" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">PasswordListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">PasswordListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/i4ezuc3Y61fEHgFbSBAvkiPpS2Dn" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">PriceDisplayListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">PriceDisplayListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ibhBVfgjUUv4DR-6kzzC5qtbytDi" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">TotalCashButtonListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">TotalCashButtonListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iinc_VGpiAybTWQA8bU_DymZ-kSo" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/maintenance</parameter>
+    <parameter name="src.file">TransferCashButtonListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\maintenance</parameter>
+    <parameter name="dest.file">TransferCashButtonListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ixG0n8A7y6qBsP0C8L8ZGSshY77d" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">CashStore.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">CashStore.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/i_jM5kGXvqJ0GGwJifaMoI0KvPUl" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">CashStoreItem.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">CashStoreItem.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iVGxyArGx_W75SBdCmKftavdi55f" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">Coin.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">Coin.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iMjs5lmg8rgEXmq0PPlHfBIa_RBh" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">DrinksBrand.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">DrinksBrand.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iHarNbWcsQVAzYiU_yQJ9baFAepm" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">DrinksStore.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">DrinksStore.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iVP2x3OTfGCKQTdHCrpKAerC5tyl" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">DrinksStoreItem.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">DrinksStoreItem.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iioC97mzZVt3vP-YBhuacJ0u4v3m" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">PropertyLoader.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">PropertyLoader.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iQAfNTDqmMaalZ5Yrv_vyExZUzRm" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">Store.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">Store.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iOjEnoVgmkunDvDy3z3XcRMbRItd" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">StoreController.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">StoreController.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/i2ViYQ-98wjA-W2fh5dLSh5Kwhzo" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">StoreItem.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">StoreItem.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/i7HfkcxEyNLBVMKtPWmZiijYKUxk" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">StoreObject.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">StoreObject.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iK51VIjriGT9DJ_nV_Mw1Dp1u92m" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</parameter>
+    <parameter name="src.file">ActivateCustomerPanelButtonListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="dest.file">ActivateCustomerPanelButtonListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iMJpXa_kzBIxpYo_pqQgwwDrSXHl" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</parameter>
+    <parameter name="src.file">ActivateMachineryPanelButtonListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="dest.file">ActivateMachineryPanelButtonListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iJXCLoQKtQoz76AUllZts_yluuXd" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</parameter>
+    <parameter name="src.file">ActivateMaintainerPanelButtonListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="dest.file">ActivateMaintainerPanelButtonListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/igcZ0bXnxCmf1GCGzQQ_4duTUiCp" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</parameter>
+    <parameter name="src.file">BeginSimulationButtonListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="dest.file">BeginSimulationButtonListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/imOOeycCAQOn3RFdjt6RHxm7jD3k" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</parameter>
+    <parameter name="src.file">CashPropertyLoader.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="dest.file">CashPropertyLoader.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/i1laC8r9z77ngnnyu43ehpAC_mge" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</parameter>
+    <parameter name="src.file">DrinkPropertyLoader.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="dest.file">DrinkPropertyLoader.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ilCKnGB2lm5HJdIv1J4qzY_hZtXg" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</parameter>
+    <parameter name="src.file">EndSimulationButtonListener.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="dest.file">EndSimulationButtonListener.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iP9puIiqInHkyX-CxlAdUMzqMuZb" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</parameter>
+    <parameter name="src.file">Environment.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="dest.file">Environment.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iFTFjUumnD5g8A4kF9cuCKotT8_i" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</parameter>
+    <parameter name="src.file">FilePropertyLoader.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="dest.file">FilePropertyLoader.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ibvVn-XwSO9gDSk2GLslxPi6UO4b" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</parameter>
+    <parameter name="src.file">MainController.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="dest.file">MainController.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/is48u5qJxIteJJv2u8E5oYr_A6Bf" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</parameter>
+    <parameter name="src.file">PaymentConfiguration.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="dest.file">PaymentConfiguration.java</parameter>
+  </action>
+  <action type="file.append" eid="i34zB185K6XT4L-9W/iCbLunW4qkI6dvOxH" uselastresult="false">
+    <parameter name="content">package sg.edu.nus.iss.vmcs.system;
+
+ 
+public class PaymentConfiguration {
+	 
+ public String getPaymentType() {
+	return "Coin";
+  }
+}</parameter>
+    <parameter name="path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="file">PaymentConfiguration.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iWi1DTxV3b35zFfUzSgyFqRE-Wne" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</parameter>
+    <parameter name="src.file">SimulationController.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="dest.file">SimulationController.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ieT1NNk75O5hRqtLrFImVisCHUSf" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/system</parameter>
+    <parameter name="src.file">SimulatorControlPanel.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\system</parameter>
+    <parameter name="dest.file">SimulatorControlPanel.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ixyBlIz1K9pPYeSqXcIfkQFS_J5i" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/util</parameter>
+    <parameter name="src.file">LabelledDisplay.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\util</parameter>
+    <parameter name="dest.file">LabelledDisplay.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/i3tY5IxSm3Td6T7Pe2C7I15_ELQj" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/util</parameter>
+    <parameter name="src.file">LabelledValue.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\util</parameter>
+    <parameter name="dest.file">LabelledValue.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ip9m39QgxORcdzLAupoGVzGy1mMe" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/util</parameter>
+    <parameter name="src.file">MessageDialog.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\util</parameter>
+    <parameter name="dest.file">MessageDialog.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/i2w6QvyhtAZtSqSQhLIvOp8rqd6f" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/util</parameter>
+    <parameter name="src.file">VMCSException.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\util</parameter>
+    <parameter name="dest.file">VMCSException.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iHnG2NeXkLe5LJoaiM9a3UEuBSCa" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs/util</parameter>
+    <parameter name="src.file">WarningDisplay.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs\util</parameter>
+    <parameter name="dest.file">WarningDisplay.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iTVvKtNQ48pVype9km0mrkTGLhUb" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/src/sg/edu/nus/iss/vmcs</parameter>
+    <parameter name="src.file">Vmcs.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\src\sg\edu\nus\iss\vmcs</parameter>
+    <parameter name="dest.file">Vmcs.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ii4sKpswhaqGVDLoBuAzpUb1Egrn" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/tests/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">AllTests.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\tests\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">AllTests.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/i-iVxP_KFDkOyCscKWerCRZXioce" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/tests/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">CashStoreItemTest.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\tests\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">CashStoreItemTest.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/inTHWONxfBJZXLH5pXlyWWFVCpKa" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/tests/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">CashStoreTest.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\tests\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">CashStoreTest.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iHo9mVPuV83UXFTFABFrNdC-fuCd" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/tests/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">CoinTest.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\tests\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">CoinTest.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ifSizWI6SEWFdRazGGpn3KflQ72h" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/tests/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">DrinksBrandTest.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\tests\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">DrinksBrandTest.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iuhs-hpbp89bdBFyVcj74GVOUhug" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/tests/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">DrinksStoreItemTest.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\tests\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">DrinksStoreItemTest.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/ijXjh89u3EiRLEQR5IwSzF0AqHEl" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/tests/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">DrinksStoreTest.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\tests\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">DrinksStoreTest.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/i8tjhEcZyhfC5YG5Rgo0sPDbqX4j" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/tests/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">StoreControllerTest.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\tests\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">StoreControllerTest.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iDJyd2NcP0gAT_h2vnlEht_ML0Zj" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/tests/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">StoreItemTest.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\tests\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">StoreItemTest.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iZ4W5nJ1auccXLRneOC8rn6jW-_f" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources/tests/sg/edu/nus/iss/vmcs/store</parameter>
+    <parameter name="src.file">StoreObjectTest.java</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources\tests\sg\edu\nus\iss\vmcs\store</parameter>
+    <parameter name="dest.file">StoreObjectTest.java</parameter>
+  </action>
+  <action type="file.copy" eid="i34zB185K6XT4L-9W/iPwIF00ixyhqYYg72uZKv7rsglAi" uselastresult="false">
+    <parameter name="src.path">C:/CA/SG5017/input/VMCS Sources</parameter>
+    <parameter name="src.file">build.xml</parameter>
+    <parameter name="dest.path">C:\CA\SG5017\output\VMCSVariant\VMCS Sources</parameter>
+    <parameter name="dest.file">build.xml</parameter>
+  </action>
+</actionlist>

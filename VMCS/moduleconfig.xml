@@ -4,10 +4,18 @@
     <input use="false"/>
     <output clear="false" create="false" recover="false" use="false"/>
     <mode type="overwrite"/>
-    <module exclude="" id="com.ps.consul.eclipse.ui.transform.makefile.module" include="/variant" name="Makefile Generator" tname="makefile">
-      <parameter name="out" type="ps:path"/>
-      <parameter name="makesystem" type="ps:string">gmake</parameter>
-      <parameter name="prefix" type="ps:string"/>
+    <module exclude="" include="/variant" name="Action List Generator" tname="standard transformation">
+      <parameter name="output file" type="ps:path">$(OUTPUT)\ActionList.xml</parameter>
+    </module>
+    <module exclude="" include="/variant" name="Action List Runner" tname="actionlist">
+      <parameter name="in" type="ps:path">$(OUTPUT)\ActionList.xml</parameter>
+      <parameter name="destroy" type="ps:boolean"/>
+    </module>
+    <module exclude="" id="com.ps.consul.ui.transform.sparxsea.module" include="/variant" name="Enterprise Architect Module" tname="Enterprise Architect Module">
+      <parameter name="file" type="ps:path">VMCS.eap</parameter>
+      <parameter name="dir" type="ps:directory">$(OUTPUT)</parameter>
+      <parameter name="srcfile" type="ps:path">VMCS.eap</parameter>
+      <parameter name="srcdir" type="ps:directory">$(INPUT)</parameter>
     </module>
   </moduleconfig>
 </moduleconfigs>
