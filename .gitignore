@@ -1,6 +1,26 @@
 
 *.class
 logs/
+output/
 input/VMCS Sources/NotePropertyFile.txt
 input/VMCS Sources/DrinkPropertyFile.txt
 input/VMCS Sources/DrinkPropertyFile.txt
+input/VMCS Sources/CashPropertyFile.txt
+input/VMCS Sources/CashPropertyFile.txt
+input/VMCS Sources/CashPropertyFile.txt
+input/VMCS Sources/CashPropertyFile.txt
+input/VMCS Sources/DrinkPropertyFile.txt
+input/VMCS Sources/DrinkPropertyFile.txt
+input/VMCS Sources/classes/sg/edu/nus/iss/vmcs/customer/paymentCodeSnippets/NonePayment.txt
+input/VMCS Sources/classes/sg/edu/nus/iss/vmcs/customer/paymentCodeSnippets/CoinWithCardPayment.txt
+input/VMCS Sources/classes/sg/edu/nus/iss/vmcs/customer/paymentCodeSnippets/CoinOnlyPayment.txt
+input/VMCS Sources/classes/sg/edu/nus/iss/vmcs/customer/paymentCodeSnippets/CashWithCardPayment.txt
+input/VMCS Sources/classes/sg/edu/nus/iss/vmcs/customer/paymentCodeSnippets/CashPayment.txt
+input/VMCS Sources/classes/sg/edu/nus/iss/vmcs/customer/paymentCodeSnippets/CardOnly.txt
+input/VMCS Sources/classes/sg/edu/nus/iss/vmcs/customer/LanguageCodeSnippets/Japnese.txt
+input/VMCS Sources/classes/sg/edu/nus/iss/vmcs/customer/LanguageCodeSnippets/Chinese.txt
+output/VMCS_CoinOnly/VMCS Sources/src/sg/edu/nus/iss/vmcs/system/PaymentConfiguration.java
+output/VMCS_CoinOnly/VMCS Sources/src/sg/edu/nus/iss/vmcs/system/PaymentConfiguration.java
+output/VMCS_CoinOnly/VMCS Sources/src/sg/edu/nus/iss/vmcs/system/PaymentConfiguration.java
+output/VMCS_CoinOnly/VMCS Sources/src/sg/edu/nus/iss/vmcs/system/PaymentConfiguration.java
+output/VMCS_CoinOnly/VMCS Sources/src/sg/edu/nus/iss/vmcs/system/PaymentConfiguration.java
