@@ -40,6 +40,8 @@ public class Vmcs {
 			System.exit(0);
 		}
 	}
+	
+	public static ResourceMessage rm=new ResourceMessage("en", "SG");
 
 	/**
 	 * Main entry point.

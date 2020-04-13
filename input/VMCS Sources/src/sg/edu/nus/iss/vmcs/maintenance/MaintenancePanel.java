@@ -9,6 +9,8 @@ package sg.edu.nus.iss.vmcs.maintenance;
 
 import java.awt.BorderLayout;
 import java.awt.Button;
+import java.awt.Checkbox;
+import java.awt.CheckboxGroup;
 import java.awt.Dialog;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -18,12 +20,16 @@ import java.awt.GridLayout;
 import java.awt.Label;
 import java.awt.Panel;
 import java.awt.Toolkit;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+import sg.edu.nus.iss.vmcs.Vmcs;
 import sg.edu.nus.iss.vmcs.store.Store;
 import sg.edu.nus.iss.vmcs.system.SimulatorControlPanel;
 import sg.edu.nus.iss.vmcs.util.LabelledDisplay;
+import sg.edu.nus.iss.vmcs.util.ResourceMessage;
 import sg.edu.nus.iss.vmcs.util.VMCSException;
 import sg.edu.nus.iss.vmcs.util.WarningDisplay;
 
@@ -93,7 +99,46 @@ public class MaintenancePanel extends Dialog {
 		lb.setFont(new Font("Helvetica", Font.BOLD, 24));
 		Panel tp1 = new Panel();
 		tp1.add(lb);
-
+		/////////
+		CheckboxGroup cbg1=new CheckboxGroup ();
+		Checkbox ckEnglish;
+		ckEnglish=new Checkbox ("English",cbg1,true);
+		ckEnglish.addItemListener (new ItemListener () {
+			  public void itemStateChanged(ItemEvent e) {               
+		           if (e.getStateChange()==1)
+		           {
+		        	   System.out.println("English");
+		        	   Vmcs.rm=new ResourceMessage("en", "SG");
+		           }
+		       }  
+		}); 
+		tp1.add(ckEnglish);
+		///
+		Checkbox ckChinese; 
+		ckChinese=new Checkbox ("Chinese",cbg1,false);
+		ckChinese.addItemListener (new ItemListener () {
+			public void itemStateChanged(ItemEvent e) {               
+		    if (e.getStateChange()==1)
+		    {
+		    	System.out.println("Chinese");
+		    	Vmcs.rm=new ResourceMessage("zh", "CN");
+		    }
+		}  });
+		tp1.add(ckChinese);
+		//
+		Checkbox ckJapnese;
+		ckJapnese=new Checkbox ("Japnese",cbg1,false);
+		ckJapnese.addItemListener (new ItemListener () {
+			 public void itemStateChanged(ItemEvent e) {               
+		         if (e.getStateChange()==1)
+		         {
+		        	 System.out.println("Japnese");
+		        	 Vmcs.rm=new ResourceMessage("ja", "JP");
+		         }
+		     }  
+		});
+		tp1.add(ckJapnese);
+		//
 		Panel tpn = new Panel();
 		tpn.setLayout(new GridLayout(0, 1));
 
@@ -109,7 +154,7 @@ public class MaintenancePanel extends Dialog {
 		tpn.add(tp1);
 		tpn.add(password);
 		tpn.add(tp3);
-
+		
 		// center part
 		Panel tpc = new Panel();
 		tpc.setLayout(new GridLayout(0, 1));

@@ -31,6 +31,7 @@ import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+import sg.edu.nus.iss.vmcs.Vmcs;
 import sg.edu.nus.iss.vmcs.system.PaymentConfiguration;
 import sg.edu.nus.iss.vmcs.system.SimulatorControlPanel;
 import sg.edu.nus.iss.vmcs.util.LabelledValue;
@@ -88,7 +89,7 @@ public class CustomerPanel extends Dialog {
 
 	public Panel pan0=new Panel();
  
-    private Label lblTitle=new Label("VMCS Soft Drinks Dispenser");
+    private Label lblTitle=new Label(Vmcs.rm.GetMessage("customer_panel_title"));
     private Label lblEnterNotes=new Label("Enter Notes Here");
     
     private Label lblEnterCoins=new Label("Enter Coins Here");
