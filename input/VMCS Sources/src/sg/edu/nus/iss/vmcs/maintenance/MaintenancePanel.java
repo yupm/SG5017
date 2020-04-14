@@ -99,46 +99,9 @@ public class MaintenancePanel extends Dialog {
 		lb.setFont(new Font("Helvetica", Font.BOLD, 24));
 		Panel tp1 = new Panel();
 		tp1.add(lb);
-		/////////
-		CheckboxGroup cbg1=new CheckboxGroup ();
-		Checkbox ckEnglish;
-		ckEnglish=new Checkbox ("English",cbg1,true);
-		ckEnglish.addItemListener (new ItemListener () {
-			  public void itemStateChanged(ItemEvent e) {               
-		           if (e.getStateChange()==1)
-		           {
-		        	   System.out.println("English");
-		        	   Vmcs.rm=new ResourceMessage("en", "SG");
-		           }
-		       }  
-		}); 
-		tp1.add(ckEnglish);
-		///
-		Checkbox ckChinese; 
-		ckChinese=new Checkbox ("Chinese",cbg1,false);
-		ckChinese.addItemListener (new ItemListener () {
-			public void itemStateChanged(ItemEvent e) {               
-		    if (e.getStateChange()==1)
-		    {
-		    	System.out.println("Chinese");
-		    	Vmcs.rm=new ResourceMessage("zh", "CN");
-		    }
-		}  });
-		tp1.add(ckChinese);
-		//
-		Checkbox ckJapnese;
-		ckJapnese=new Checkbox ("Japnese",cbg1,false);
-		ckJapnese.addItemListener (new ItemListener () {
-			 public void itemStateChanged(ItemEvent e) {               
-		         if (e.getStateChange()==1)
-		         {
-		        	 System.out.println("Japnese");
-		        	 Vmcs.rm=new ResourceMessage("ja", "JP");
-		         }
-		     }  
-		});
-		tp1.add(ckJapnese);
-		//
+		LanguagePanel lp=new LanguagePanel();
+		lp.LoadLanguagePanel(tp1);
+
 		Panel tpn = new Panel();
 		tpn.setLayout(new GridLayout(0, 1));
 
@@ -156,6 +119,8 @@ public class MaintenancePanel extends Dialog {
 		tpn.add(tp3);
 		
 		// center part
+		
+		
 		Panel tpc = new Panel();
 		tpc.setLayout(new GridLayout(0, 1));
 
