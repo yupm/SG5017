@@ -10,9 +10,7 @@ package sg.edu.nus.iss.vmcs.customer;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
-import java.awt.Label;
 import java.awt.Panel;
-
 
 import sg.edu.nus.iss.vmcs.store.DrinksBrand;
 import sg.edu.nus.iss.vmcs.store.DrinksStoreItem;
@@ -27,10 +25,10 @@ import sg.edu.nus.iss.vmcs.system.MainController;
  * @author Team SE16T5E
  * @version 1.0 2008-10-01
  */
-public class DrinkSelectionBox extends Panel implements DrinkSelectionBoxInterface{
+public class DrinkSelectionBox extends Panel{
 	private DrinkSelectionItem drinkSelectionItems[];
 	private TransactionController txCtrl;
-
+	
 	/**Array of integers providing identifiers for each selection button.*/
 	
 	/**
@@ -60,9 +58,7 @@ public class DrinkSelectionBox extends Panel implements DrinkSelectionBoxInterfa
 			add(drinkSelectionItems[i],new GridBagConstraints(0,i,1,1,1.0,0.0,
 				    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
 				    new Insets(5,0,0,0),10,0));  
-			
 		}
-	
 	}
 	
 	/**
