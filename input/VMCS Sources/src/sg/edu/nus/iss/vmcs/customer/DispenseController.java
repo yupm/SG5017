@@ -71,7 +71,7 @@ public class DispenseController {
 		if(custPanel==null){
 			return;
 		}
-		DrinkSelectionBox drinkSelectionBox=custPanel.getDrinkSelectionBox();
+		DrinkSelectionBoxInterface drinkSelectionBox=custPanel.getDrinkSelectionBox();
 		StoreController storeCtrl=mainCtrl.getStoreController();
 		int storeSize=storeCtrl.getStoreSize(Store.DRINK);
 		for(int i=0;i<storeSize;i++){
