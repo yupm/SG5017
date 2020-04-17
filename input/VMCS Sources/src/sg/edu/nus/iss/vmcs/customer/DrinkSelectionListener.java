@@ -20,13 +20,11 @@ import java.awt.event.ActionListener;
  */
 public class DrinkSelectionListener implements ActionListener{
 	private TransactionController txCtrl;
-	
 	private int drinkIdentifier=-1;
 	/**
 	 * This constructor creates an instance of the object.
 	 * @param txCtrl the TransactionController&#46;
 	 */
-
 	public DrinkSelectionListener(TransactionController txCtrl, int drinkIdentifier){
 		this.txCtrl=txCtrl;
 		this.drinkIdentifier=drinkIdentifier;
