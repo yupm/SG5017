@@ -25,8 +25,9 @@ import sg.edu.nus.iss.vmcs.util.WarningDisplay;
  * @author Team SE16T5E
  * @version 1.0 2008-10-01
  */
-public class DrinkSelectionItem extends Panel{
-	private Button btn=new Button("");
+public class KeypadDrinkSelectionItem extends Panel{
+//	private Button btn=new Button("");
+	private Label btn=new Label("");
 	private Label lbl=new Label();
 	private WarningDisplay wnd=new WarningDisplay("Not in Stock");
 	
@@ -44,7 +45,7 @@ public class DrinkSelectionItem extends Panel{
 	 * @param quantity the quantity of the drink&#46;
 	 * @param isActive the active status of the drink&#46;
 	 */
-	public DrinkSelectionItem(int drinkIdentifier, String drinkName, int drinkPrice, int quantity, boolean isActive, boolean isWarningOn){
+	public KeypadDrinkSelectionItem(int drinkIdentifier, String drinkName, int drinkPrice, int quantity, boolean isActive, boolean isWarningOn){
 		this.setDrinkIdentifier(drinkIdentifier);
 		this.setName(drinkName);
 		this.setPrice(drinkPrice);
@@ -57,7 +58,7 @@ public class DrinkSelectionItem extends Panel{
 	 * This method initialize the GUI.
 	 */
 	private void init(){
-		btn.setLabel(name);
+		btn.setText(name + "    (" + drinkIdentifier + ")");
 		lbl.setText(""+price+" C");
 		
 		lbl.setBackground(Color.lightGray);
@@ -80,7 +81,7 @@ public class DrinkSelectionItem extends Panel{
 	 * @param listener the action listener.
 	 */
 	public void addListener(ActionListener listener){
-		btn.addActionListener(listener);
+	//	btn.addActionListener(listener);
 	}
 	
 	/**
@@ -88,7 +89,7 @@ public class DrinkSelectionItem extends Panel{
 	 * @param listener the action listener.
 	 */
 	public void removeListener(ActionListener listener){
-		btn.removeActionListener(listener);
+		//btn.removeActionListener(listener);
 	}
 	
 	/**
