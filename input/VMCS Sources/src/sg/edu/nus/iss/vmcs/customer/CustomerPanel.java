@@ -30,6 +30,7 @@ import java.awt.Panel;
 import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.lang.reflect.Constructor;
 
 import sg.edu.nus.iss.vmcs.Vmcs;
 import sg.edu.nus.iss.vmcs.system.PaymentConfiguration;
@@ -97,7 +98,8 @@ public class CustomerPanel extends Dialog {
     private NoteInputBox noteInputBox;
     private CardInputBox cardInputBox;
     
-    private DrinkSelectionBox drinkSelectionBox;
+//    private DrinkSelectionBox drinkSelectionBox;
+    private DrinkSelectionBoxInterface drinkSelectionBox;
     private WarningDisplay wndInvalidCoin=new WarningDisplay("Invalid Coin");
     private LabelledValue lbdTotalMoneyInserted=new LabelledValue("Total Money Inserted:","0 C",50);
     private WarningDisplay wndNoChangeAvailable=new WarningDisplay("No Change Available");
@@ -188,9 +190,42 @@ public class CustomerPanel extends Dialog {
 				    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
 				    new Insets(5,0,0,0),10,0));
 		}
-		pan0.add(drinkSelectionBox,new GridBagConstraints(0,row++,0,1,0.0,0.0,
-			    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
-			    new Insets(5,0,0,0),10,0));
+		try 
+		{
+		
+			Class drinkSelectionBoxClass = Class.forName("sg.edu.nus.iss.vmcs.customer.DrinkSelectionBox");
+			Constructor constructor = drinkSelectionBoxClass.getConstructor(TransactionController.class);
+			
+			drinkSelectionBox = (DrinkSelectionBoxInterface)constructor.newInstance(txCtrl); 
+			//drinkSelectionBox=new DrinkSelectionBox(txCtrl);
+			drinkSelectionBox.setActive(true);
+
+			pan0.add((Panel)drinkSelectionBox,new GridBagConstraints(0,row++,0,1,0.0,0.0,
+				    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
+				    new Insets(5,0,0,0),10,0));
+
+			
+		} catch (Exception ex) 
+		{
+			try {
+				Class drinkSelectionBoxClass = Class.forName("sg.edu.nus.iss.vmcs.customer.KeypadDrinkSelectionBox");
+				Constructor constructor = drinkSelectionBoxClass.getConstructor(TransactionController.class);
+				
+				drinkSelectionBox = (DrinkSelectionBoxInterface)constructor.newInstance(txCtrl); 
+				//drinkSelectionBox=new DrinkSelectionBox(txCtrl);
+				drinkSelectionBox.setActive(true);
+	
+				pan0.add((Panel)drinkSelectionBox,new GridBagConstraints(0,row++,0,1,0.0,0.0,
+					    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
+					    new Insets(5,0,0,0),10,0));
+			}catch (Exception e1)
+			{
+			
+			}
+		}
+//		pan0.add(drinkSelectionBox,new GridBagConstraints(0,row++,0,1,0.0,0.0,
+//			    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
+//			    new Insets(5,0,0,0),10,0));
 
 		if(paymentMode.getPaymentType() != PaymentType.CardOnly) {
 			pan0.add(wndNoChangeAvailable,new GridBagConstraints(0,row++,0,1,0.0,0.0,
@@ -402,8 +437,8 @@ public class CustomerPanel extends Dialog {
 	 * This method returns the DrinkSelectionBox in the CustomerPanel.
 	 * @return the DrinkSelectionBox in the CustomerPanel.
 	 */
-	public DrinkSelectionBox getDrinkSelectionBox(){
-		return drinkSelectionBox;
+	public DrinkSelectionBoxInterface getDrinkSelectionBox(){
+		return (DrinkSelectionBoxInterface)drinkSelectionBox;
 	}
 	
 	/**

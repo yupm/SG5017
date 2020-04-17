@@ -30,6 +30,7 @@ import java.awt.Panel;
 import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.lang.reflect.Constructor;
 
 import sg.edu.nus.iss.vmcs.system.SimulatorControlPanel;
 import sg.edu.nus.iss.vmcs.util.LabelledValue;
@@ -84,7 +85,8 @@ public class NoPayCustomerPanel extends CustomerPanel {
 	private NoPayTransactionController txCtrl;
 
     private Label lblTitle=new Label("VMCS Soft Drinks Dispenser without payment");
-    private DrinkSelectionBox drinkSelectionBox;
+    //private DrinkSelectionBox drinkSelectionBox;
+    private DrinkSelectionBoxInterface drinkSelectionBox;
     private LabelledValue lbdCollectCan=new LabelledValue("Collect Can Here:","",100);
 
     /**
@@ -117,16 +119,48 @@ public class NoPayCustomerPanel extends CustomerPanel {
 		});
 		
 		drinkSelectionBox=new DrinkSelectionBox(txCtrl);
-		drinkSelectionBox.setActive(true);
 		
 		lblTitle.setAlignment(Label.CENTER);
 		lblTitle.setFont(new Font("Helvetica", Font.BOLD, 24));
 		
 		pan0.setLayout(new GridBagLayout());
+	
+		try 
+		{
 		
-		pan0.add(drinkSelectionBox,new GridBagConstraints(0,4,0,1,0.0,0.0,
-			    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
-			    new Insets(5,0,0,0),10,0));
+			Class drinkSelectionBoxClass = Class.forName("sg.edu.nus.iss.vmcs.customer.DrinkSelectionBox");
+			Constructor constructor = drinkSelectionBoxClass.getConstructor(TransactionController.class);
+			
+			drinkSelectionBox = (DrinkSelectionBoxInterface)constructor.newInstance(txCtrl); 
+			//drinkSelectionBox=new DrinkSelectionBox(txCtrl);
+			drinkSelectionBox.setActive(true);
+
+			pan0.add((Panel)drinkSelectionBox,new GridBagConstraints(0,4,0,1,0.0,0.0,
+				    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
+				    new Insets(5,0,0,0),10,0));
+
+			
+		} catch (Exception ex) 
+		{
+			try {
+				Class drinkSelectionBoxClass = Class.forName("sg.edu.nus.iss.vmcs.customer.KeypadDrinkSelectionBox");
+				Constructor constructor = drinkSelectionBoxClass.getConstructor(TransactionController.class);
+				
+				drinkSelectionBox = (DrinkSelectionBoxInterface)constructor.newInstance(txCtrl); 
+				//drinkSelectionBox=new DrinkSelectionBox(txCtrl);
+				drinkSelectionBox.setActive(true);
+	
+				pan0.add((Panel)drinkSelectionBox,new GridBagConstraints(0,4,0,1,0.0,0.0,
+					    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
+					    new Insets(5,0,0,0),10,0));
+			}catch (Exception e1)
+			{
+			
+			}
+		}
+//		pan0.add(drinkSelectionBox,new GridBagConstraints(0,4,0,1,0.0,0.0,
+//			    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
+//			    new Insets(5,0,0,0),10,0));
 		pan0.add(lbdCollectCan,new GridBagConstraints(0,8,0,1,0.0,0.0,
 			    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
 			    new Insets(2,0,20,0),10,0));
@@ -196,8 +230,8 @@ public class NoPayCustomerPanel extends CustomerPanel {
 	 * This method returns the DrinkSelectionBox in the CustomerPanel.
 	 * @return the DrinkSelectionBox in the CustomerPanel.
 	 */
-	public DrinkSelectionBox getDrinkSelectionBox(){
-		return drinkSelectionBox;
+	public DrinkSelectionBoxInterface getDrinkSelectionBox(){
+		return (DrinkSelectionBoxInterface)drinkSelectionBox;
 	}
 	
 	/**
