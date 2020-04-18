@@ -34,8 +34,7 @@ public class DrinksStore extends Store {
 	
 
 	public void setTemp(int idx, String temp) {
-		
-		if(temp.toLowerCase() == "none") {
+		if(temp.toLowerCase().contentEquals("none")) {
 			temp = "";
 		}else {
 			temp = "(" + temp + ") ";

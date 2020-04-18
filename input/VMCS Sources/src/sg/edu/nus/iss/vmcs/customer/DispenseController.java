@@ -114,11 +114,10 @@ public class DispenseController {
 			DrinksStoreItem drinkStoreItem= (DrinksStoreItem)storeCtrl.getStore(Store.DRINK).getStoreItem(selectedBrand);
 			StoreObject storeObject=drinkStoreItem.getContent();
 			DrinksBrand drinksBrand=(DrinksBrand)storeObject;
-			String drinksName=drinksBrand.getName();
-			String temp= drinkStoreItem.getTemp();
+			String drinksName=drinkStoreItem.getName();
 			int price=drinksBrand.getPrice();
 			int quantity=drinkStoreItem.getQuantity();
-			txCtrl.getCustomerPanel().setCan(temp + drinksName);
+			txCtrl.getCustomerPanel().setCan(drinksName);
 			updateDrinkSelection(selectedBrand);
 			txCtrl.getCustomerPanel().getDrinkSelectionBox().update(selectedBrand, quantity, price, drinksName);
 		}
