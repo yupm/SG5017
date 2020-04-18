@@ -31,4 +31,17 @@ public class DrinksStore extends Store {
 	 */
 	public DrinksStore() {
 	}
+	
+
+	public void setTemp(int idx, String temp) {
+		
+		if(temp.toLowerCase() == "none") {
+			temp = "";
+		}else {
+			temp = "(" + temp + ") ";
+		}
+		
+		((DrinksStoreItem)items[idx]).setTemp(temp);
+	}
+	
 }//End of class DrinksStore

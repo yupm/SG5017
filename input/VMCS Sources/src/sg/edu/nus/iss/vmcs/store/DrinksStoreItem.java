@@ -27,6 +27,7 @@ package sg.edu.nus.iss.vmcs.store;
  * @author Olivo Miotto, Pang Ping Li
  */
 public class DrinksStoreItem extends StoreItem {
+	private String temp = "";
 
 	/**
 	 * This constructor creates an instance of DrinksStoreItem object&#46;
@@ -36,4 +37,21 @@ public class DrinksStoreItem extends StoreItem {
 	public DrinksStoreItem(DrinksBrand ob, int qty) {
 		super((StoreObject) ob, qty);
 	}
+	
+	/**
+	 * This method get the temp of StoreItem held.
+	 * @param String.
+	 */	
+	public String getTemp() {
+		return temp;
+	}
+	
+	/**
+	 * This method sets the temp of StoreItem held.
+	 * @param String.
+	 */
+	public void setTemp(String t) {
+		temp = t;
+	}
+	
 }//End of class DrinksStoreItem

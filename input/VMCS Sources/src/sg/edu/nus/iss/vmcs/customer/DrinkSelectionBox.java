@@ -55,7 +55,8 @@ public class DrinkSelectionBox extends Panel implements DrinkSelectionBoxInterfa
 			String drinksName=drinksBrand.getName();
 			int drinksPrice=drinksBrand.getPrice();
 			int drinksQuantity=drinksStoreItem.getQuantity();
-			drinkSelectionItems[i]=new DrinkSelectionItem(i,drinksName,drinksPrice,drinksQuantity,true,false);
+			String temp=drinksStoreItem.getTemp();
+			drinkSelectionItems[i]=new DrinkSelectionItem(i,temp + drinksName,drinksPrice,drinksQuantity,true,false);
 			drinkSelectionItems[i].addListener(new DrinkSelectionListener(txCtrl,i));
 			add(drinkSelectionItems[i],new GridBagConstraints(0,i,1,1,1.0,0.0,
 				    GridBagConstraints.CENTER,GridBagConstraints.HORIZONTAL,
