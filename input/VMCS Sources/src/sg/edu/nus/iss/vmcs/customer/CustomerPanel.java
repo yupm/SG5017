@@ -208,7 +208,7 @@ public class CustomerPanel extends Dialog {
 		} catch (Exception ex) 
 		{
 			try {
-				Class drinkSelectionBoxClass = Class.forName("sg.edu.nus.iss.vmcs.customer.KeypadDrinkSelectionBox");
+				Class drinkSelectionBoxClass = Class.forName("sg.edu.nus.iss.vmcs.customer.KeypadDrinkSelectionBox1");
 				Constructor constructor = drinkSelectionBoxClass.getConstructor(TransactionController.class);
 				
 				drinkSelectionBox = (DrinkSelectionBoxInterface)constructor.newInstance(txCtrl); 
