@@ -193,6 +193,11 @@ public class StoreController {
 			else
 				dStore.setQuantity(idx, qty);
 	}
+	
+	
+	public void changeDrinkTemp(int type, int idx, String temp) {
+		dStore.setTemp(idx, temp);
+	}
 
 	/**
 	 * This method returns the {@link StoreItem} with the given {@link Store} type and index of {@link StoreItem}.

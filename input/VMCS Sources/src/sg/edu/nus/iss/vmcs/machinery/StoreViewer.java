@@ -62,11 +62,29 @@ public class StoreViewer extends Panel {
 
 		for (int i = 0; i < sSize; i++) {
 			String name = storeItem[i].getContent().getName();
-			viewItems[i] = new LabelledDisplay(name,
+			
+			if(type == Store.DRINK) {
+				String temp = ((DrinksStoreItem)storeItem[i]).getTemp();
+
+				viewItems[i] = new TempLabelDisplay(temp + name,
 						LabelledDisplay.DEFAULT,
 						LabelledDisplay.GRID);
-			viewItems[i].addListener(
+				viewItems[i].addListener(
                         new StoreViewerListener(type, i, storeCtrl));
+				
+				((TempLabelDisplay)viewItems[i]).addTempListener(
+                        new TempControlStoreViewerListener(type, i, storeCtrl));
+			}
+			else
+			{
+				viewItems[i] = new LabelledDisplay(name,
+						LabelledDisplay.DEFAULT,
+						LabelledDisplay.GRID);	
+				
+				viewItems[i].addListener(
+                        new StoreViewerListener(type, i, storeCtrl));
+			}
+
 			this.add(viewItems[i]);
 		}
 		
