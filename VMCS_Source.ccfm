@@ -144,6 +144,16 @@
         <cm:script cm:id="ibBjZ5jZLUCSr3HZ-" cm:language="ps:pvscl" cm:type="ps:boolean">Heater AND Cooler</cm:script>
       </cm:restriction>
     </cm:restset>
+    <cm:restset cm:id="i1-yOcUu9oLJ-R9PQ">
+      <cm:restriction cm:id="iO5DzGSXVNZtWtgoj">
+        <cm:script cm:id="iwDxAKdIaJwj3htCd" cm:language="ps:pvscl" cm:type="ps:boolean">TempControl</cm:script>
+      </cm:restriction>
+    </cm:restset>
+    <cm:restset cm:id="ipmY4F6ASxzULTfIN">
+      <cm:restriction cm:id="iBba2VVGs_ksOUOeI">
+        <cm:script cm:id="imYHfqutlBsHZ1oaG" cm:language="ps:pvscl" cm:type="ps:boolean">Language</cm:script>
+      </cm:restriction>
+    </cm:restset>
   </cm:restrictions>
   <cm:elements cm:rootid="iVdWNcdJjGzjaUUXMrQHZnVnkIfk">
     <cm:element cm:id="iVdWNcdJjGzjaUUXMrQHZnVnkIfk" cm:name="VMCS_Source" cm:type="ps:family" cm:class="ps:family" cm:default="on">
@@ -11017,6 +11027,7 @@
           <cm:target cm:id="ibqBw9_pJMj0ThrYmjIWmaqfrKPHOdanZy2gXaGjc">./iasQt2I0maqP0ukNUj72vcbvVJmo</cm:target>
           <cm:target cm:id="i190DtenZhXicOASl-F298FwL1TseX8IiAgdGMjPk">./i70OWTT08grGGygvyVEqAza1mdIc</cm:target>
           <cm:target cm:id="iSRbq-VfbJyKjUl3DerickYvfXCVRAwruerCxOAxf">./iONhb4MO7ZtJLNaMu5MCMJX77pka</cm:target>
+          <cm:target cm:id="iFOrit1-3YKgUF4vltBo2EMc0hBh">./ifUod1JMG5XWWi__olgxAIBTDQ5b</cm:target>
         </cm:relation>
       </cm:relations>
       <cm:properties>
@@ -11036,7 +11047,7 @@
           <cm:constant cm:id="i1NhGlpNHvB8ft7N_" cm:type="ps:string">nusiss</cm:constant>
         </cm:property>
         <cm:property cm:id="ieIn4h_N5nU47k0-g" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="iUAXqZ2jO_oRY4fgx" cm:type="ps:datetime">2020-04-19T09:11:18.080Z</cm:constant>
+          <cm:constant cm:id="iUAXqZ2jO_oRY4fgx" cm:type="ps:datetime">2020-04-26T11:10:09.449Z</cm:constant>
         </cm:property>
       </cm:properties>
       <cm:vname>
@@ -13041,7 +13052,7 @@
         <cm:mimedesc cm:id="iPC_XIRHi5msKXeeQ" cm:mimetype="text/plain" cm:encoding="utf-8">MyLabels_zh_CN.properties</cm:mimedesc>
       </cm:vname>
     </cm:element>
-    <cm:element cm:id="i2N4S6d-SLuT3kYqTZiNJFpzyFPd" cm:type="ps:class" cm:class="ps:part" cm:default="on">
+    <cm:element cm:id="i2N4S6d-SLuT3kYqTZiNJFpzyFPd" cm:restriction="ipmY4F6ASxzULTfIN" cm:type="ps:class" cm:class="ps:part" cm:default="on">
       <cm:relations cm:id="i2N4S6d-SLuT3kYqTZiNJFpzyFPddependecies" cm:class="ps:dependencies">
       </cm:relations>
       <cm:relations cm:id="iMPTRotjYA2DNSlZSRkP6F3FhMP0TUlD309XSH4vf" cm:class="ps:parents">
@@ -13065,7 +13076,7 @@
           <cm:constant cm:id="iKYCBBaBaNDYfL24v" cm:type="ps:string">nusiss</cm:constant>
         </cm:property>
         <cm:property cm:id="iVV4jKMPFHT-hrmDc" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
-          <cm:constant cm:id="isLiXVPkSW9tlyYRG" cm:type="ps:datetime">2020-04-19T09:11:18.081Z</cm:constant>
+          <cm:constant cm:id="isLiXVPkSW9tlyYRG" cm:type="ps:datetime">2020-04-26T11:11:42.500Z</cm:constant>
         </cm:property>
       </cm:properties>
       <cm:vname>
@@ -14726,6 +14737,69 @@ public class TempLabelDisplay extends LabelledDisplay{
           <cm:constant cm:id="iBod0geqyjaSHeOHZ" cm:type="ps:datetime">2020-04-20T05:29:37.158Z</cm:constant>
         </cm:property>
       </cm:properties>
+    </cm:element>
+    <cm:element cm:id="ifUod1JMG5XWWi__olgxAIBTDQ5b" cm:restriction="i1-yOcUu9oLJ-R9PQ" cm:type="ps:class" cm:class="ps:part" cm:default="on">
+      <cm:relations cm:id="ifUod1JMG5XWWi__olgxAIBTDQ5bdependecies" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iLjGiJiw1dWS7SBw1AgV7XmJOWm6-vL4-HypZdqAw" cm:class="ps:parents">
+        <cm:relation cm:id="i__C3XSxvptCxB2-V0DXmw1dqx1MjBg8VSlfb8FbG" cm:type="ps:parent">
+          <cm:target cm:id="iyMca3n7E4-297obGoZwLV7O6_VYSxvlItKers0Xm">./iFJze5GYGha8bjO3H7v8a_9NDhVm</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:relations cm:id="ik-QPnEONarqcpe22CFTk8rhSTxf" cm:class="ps:children">
+        <cm:relation cm:id="iMq-S7ZZQMzSCWDMQ0fLE-q1NHbj" cm:type="ps:optional">
+          <cm:target cm:id="iCzk2j5hc-rhNnslibvbFTrCHYxf">./in76ldKHrDdQ2pKbitutiHq-XBuk</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="iHDhGRpM63YD5ERyJ" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="iqq8tsxgSAe_Nw4Y0" cm:type="ps:string">nusiss</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i0_Qk_7O3ubroIbQ6" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="iF84wGhQn3ylrk79h" cm:type="ps:datetime">2020-04-26T11:10:09.449Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iqMpaCKXsxOvUzc_B" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iOzOLiCKsEsfBnz-o" cm:type="ps:string">nusiss</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iSM-ZCBlhUV2_zjxT" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="iqHEesa54ejgLANWk" cm:type="ps:datetime">2020-04-26T11:10:35.692Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="iqrEPG2rzl9nXSd2R" cm:mimetype="text/plain" cm:encoding="utf-8">TempControlTest</cm:mimedesc>
+      </cm:vname>
+    </cm:element>
+    <cm:element cm:id="in76ldKHrDdQ2pKbitutiHq-XBuk" cm:type="ps:file" cm:class="ps:source" cm:default="on">
+      <cm:relations cm:id="in76ldKHrDdQ2pKbitutiHq-XBukdependecies" cm:class="ps:dependencies">
+      </cm:relations>
+      <cm:relations cm:id="iUBDxrulYVRDxuvCxgbJO19XSAw5E7URA7U8VV7V7" cm:class="ps:parents">
+        <cm:relation cm:id="iPAuveXq0R67UUl8FAMt019RAU7SRBM4UOQvfpJW8" cm:type="ps:parent">
+          <cm:target cm:id="i3Dxv7o__vfgb9FfXPQgHWmkcjIKPqKRkSl1THieb">./ifUod1JMG5XWWi__olgxAIBTDQ5b</cm:target>
+        </cm:relation>
+      </cm:relations>
+      <cm:properties>
+        <cm:property cm:id="izlrdzeHKhx8TQKcS60xoGkPCgQi" cm:type="ps:path" cm:fixed="true" cm:name="file">
+          <cm:constant cm:id="iWWyOmcoRl6tP7sSHekgMCKYLlCc" cm:type="ps:path">TempControlTest.java</cm:constant>
+        </cm:property>
+        <cm:property cm:id="igtyjr7VU71CKig-HFPHXMoWnWlb" cm:type="ps:filetype" cm:fixed="true" cm:name="type">
+          <cm:constant cm:id="i5SLjH1YKrnh0RxkWhGwD-xDEUMf" cm:type="ps:filetype">impl</cm:constant>
+        </cm:property>
+        <cm:property cm:id="itedypq7LuQEZJGvR" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:Source">
+          <cm:constant cm:id="icSvC-aHfykp1M6Oo" cm:type="ps:string">nusiss</cm:constant>
+        </cm:property>
+        <cm:property cm:id="i4D66Dv2ZDwB6hFnJ" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Created">
+          <cm:constant cm:id="igGk35hatbAD09AtA" cm:type="ps:datetime">2020-04-26T11:10:09.449Z</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iLg-RXkubqetjR70E" cm:type="ps:string" cm:fixed="true" cm:readonly="true" cm:name="ps:ChangedBy">
+          <cm:constant cm:id="iHuSg6t0oif4I7S72" cm:type="ps:string">nusiss</cm:constant>
+        </cm:property>
+        <cm:property cm:id="iLbX5ffPWRjBGvGzX" cm:type="ps:datetime" cm:fixed="true" cm:readonly="true" cm:name="ps:Changed">
+          <cm:constant cm:id="imW6QCx5lxQkGJbKd" cm:type="ps:datetime">2020-04-26T11:10:09.449Z</cm:constant>
+        </cm:property>
+      </cm:properties>
+      <cm:vname>
+        <cm:mimedesc cm:id="ioR09Ce6stQ6rYmYI" cm:mimetype="text/plain" cm:encoding="utf-8">TempControlTest.java</cm:mimedesc>
+      </cm:vname>
     </cm:element>
   </cm:elements>
 </cm:consulmodel>
